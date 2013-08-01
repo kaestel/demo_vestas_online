@@ -1,0 +1,33 @@
+<div class="panel sharepage">
+	<div class="box">
+		<div class="header">
+			<h2>Share this page</h2>
+			<ul class="actions">
+				<li class="close"><a href="#">Close</a></li>
+			</ul>
+		</div>
+		<div class="body">
+			<form name="sharepage" action="/templates/ajax/sharepage.json" method="post">
+				<fieldset>
+					<div class="field string required url_string">
+						<label for="url_string">Page url</label>
+						<input type="text" readonly="readonly" name="url_string" id="url_string" value="" />
+					</div>
+					<div class="field text required message_text">
+						<label for="message_text">Enter message</label>
+						<textarea name="message_text" id="message_text"></textarea>
+					</div>
+					<div class="field string required recipient_string">
+						<label for="recipient_string">Add recipients</label>
+						<input type="text" name="recipient_string" id="recipient_string" value="" />
+						<p class="error">Please enter one or more e-mail addresses seperated by commas</p>
+					</div>
+				</fieldset>
+				<ul class="actions">
+					<li class="cancel"><a href="#" class="button">Cancel</a></li>
+					<li class="submit"><input type="submit" value="Send" class="button primary" /></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+</div>

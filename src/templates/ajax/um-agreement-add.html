@@ -1,0 +1,62 @@
+<div id="content" class="UserManagement addagreement">
+
+	<div class="box">
+		<div class="header">
+			<ul class="actions">
+				<li class="back"><a href="/templates/um-agreement-new.html">Back</a></li>
+			</ul>
+		</div>
+		<div class="body">
+
+			<h3>New Vestas eBusiness Agreement for #ACCOUNT#</h3>
+
+			<form action="/templates/ajax/MDCreateAgreement.json" method="post" class="i:form send:jdata">
+				<input type="hidden" name="aresponse_success_forward_url" value="um-agreement.html" class="ignoreinput" />
+				<input type="hidden" name="aresponse_success_forward_parameters" value="agreementid" class="ignoreinput" />
+				<fieldset>
+					<div class="field date required">
+						<label for="agreement_date">Agreement date (yyyy.mm.dd)</label>
+						<input type="text" name="agreement_date" value="" id="agreement_date" />
+						<p class="hint">Date</p>
+						<p class="error">Add a agreement date</p>
+					</div>
+					<div class="field date required">
+						<label for="valid_date">Agreement is valid from (yyyy.mm.dd)</label>
+						<input type="text" name="valid_date" value="" id="valid_date" />
+						<p class="hint">Date</p>
+						<p class="error">fejl 40</p>
+					</div>
+					<div class="field date required after:valid_date">
+						<label for="expiry_date">Expiry date (yyyy.mm.dd)</label>
+						<input type="text" name="expiry_date" value="" id="expiry_date" />
+						<p class="hint">Date</p>
+						<p class="error">fejl 40</p>
+					</div>
+				</fieldset>
+
+				<h4>Agreement signed by</h4>
+				<fieldset>
+					<div class="field string required">
+						<label>Vestas agreement responsible</label>
+						<input type="text" name="resp" value="" />
+						<p class="hint">String</p>
+						<p class="error">fejl 40</p>
+					</div>
+					<div class="field string required">
+						<label>Client representative</label>
+						<input type="text" name="rep" value="" />
+						<p class="hint">String</p>
+						<p class="error">fejl 40</p>
+					</div>
+
+				</fieldset>
+
+				<ul class="actions">
+					<li class="submit"><input type="submit" class="button primary" value="Create new agreement" /></li>
+				</ul>
+			</form>
+
+		</div>
+	</div>
+
+</div>

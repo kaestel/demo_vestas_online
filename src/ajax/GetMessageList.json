@@ -1,0 +1,67 @@
+{
+    "show_more": false,
+    "result": [{
+        "message_id": "0267cfb6-f05f-4438-ac5b-e9cb0dddb19c",
+        "message_read": "true",
+        "message_star": "true",
+        "message_high_prio": false,
+        "message_sender": "Peter Lolk",
+        "message_subject": "Resource maximizing methodologies",
+        "message_date": "1234567897399"
+    },
+    {
+        "message_id": "0fb90cbe-653f-4cb5-a8b3-c683447ed3b0",
+        "message_read": "true",
+        "message_star": "false",
+        "message_high_prio": false,
+        "message_sender": "Peter Lolk",
+        "message_subject": "Completely maximize real-time outside the box thinking with one-to-one users",
+        "message_date": "1234567897399"
+    },
+    {
+        "message_id": "2471bd60-5678-45ad-ae72-ea7a3af3d88e",
+        "message_read": "true",
+        "message_star": "false",
+        "message_high_prio": true,
+        "message_sender": "Peter Lolk",
+        "message_subject": "Professionally unleash customized leadership",
+        "message_date": "1234567897399"
+    },
+    {
+        "message_id": "3f69c26e-c63c-435b-96ac-1bbf7dc9ee55",
+        "message_read": "true",
+        "message_star": "false",
+        "message_high_prio": false,
+        "message_sender": "Thomas Ove Rasmussen",
+        "message_subject": "Energistically monetize ethical services after bricks-and-clicks benefits",
+        "message_date": "1234567897399"
+    },
+    {
+        "message_id": "432d0f2e-a97b-4476-a124-88a91893f7e9",
+        "message_read": "false",
+        "message_star": "false",
+        "message_high_prio": false,
+        "message_sender": "Peter Lolk",
+        "message_subject": "Progressively empower enterprise-wide intellectual capital",
+        "message_date": "1234567897399"
+    },
+    {
+        "message_id": "5acc7f75-3958-469c-b350-b4597c790827",
+        "message_read": "true",
+        "message_star": "true",
+        "message_high_prio": false,
+        "message_sender": "Peter Lolk",
+        "message_subject": "Seamlessly iterate extensible ROI through low-risk high-yield vortals",
+        "message_date": "1234567897399"
+    },
+    {
+        "message_id": "5fa61835-46eb-4623-a834-c096eb23117f",
+        "message_read": "true",
+        "message_star": "false",
+        "message_high_prio": false,
+        "message_sender": "Peter Lolk",
+        "message_subject": "Uniquely revolutionize technically sound growth strategies for principle-centered leadership",
+        "message_date": "1234567897399"
+    }],
+    "success": true
+}

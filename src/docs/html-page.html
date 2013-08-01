@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- (c) & (p) hvadhedderde.com 2011 //-->
+	<!-- All material protected by copyrightlaws, as if you didnt know //-->
+	<title>Vestas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_desktop_include.css" />
+	<script type="text/javascript" src="/js/lib/seg_desktop_include.js"></script>
+</head>
+<body>
+
+<div id="page" class="i:page">
+
+	<div id="header">
+		<div class="c400">
+
+			<div class="info">
+				<div class="jumpboardlink"><a href="/docs/index.html" title="Back to documentation">Documentation</a></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="banner"></div>
+
+	<div id="subnavigation">
+		<ul>
+			<li><h4><a href="index.html">Docs home</a></h4></li>
+			<li class="selected"><h4><a href="html-intro.html">HTML</a></h4></li>
+			<li><h4><a href="js-intro.html">JavaScript</a></h4></li>
+		</ul>
+	</div>
+
+	<div id="content" class="docs">
+
+		<div class="box">
+			<div class="header">
+				<h2>Page structure</h2>
+			</div>
+
+			<div class="body">
+				<h3>Quick overview</h3> 
+
+				<p>
+					The basic page structure is composed of an outer 
+					<a href="#section-page">#page</a>, which contains all other elements.
+					A <a href="#section-header">#header</a> containing .client, .user and
+					<a href="#section-navigation">#navigation</a>.
+					<a href="#section-subnavigation">#subnavigation</a>, 
+					<a href="#section-content">#content</a>,
+					<a href="#section-feedback">#feedback</a>. 
+					<a href="#section-footer">#footer</a>. 
+					Each element, except for #page and #header, can be omitted and the remaining
+					nodes will collapse the void, to maintain the intended page appearance.
+				</p>
+				<p>Simplified, it looks like this:</p>
+				<code>
+&lt;div id=&quot;page&quot; class=&quot;i:page&quot;&gt;
+	&lt;div id=&quot;header&quot;&gt;
+		&lt;div class=&quot;client&quot;&gt;...&lt;/div&gt;
+		&lt;div class=&quot;user&quot;&gt;...&lt;/div&gt;
+		&lt;div id=&quot;navigation&quot;&gt;...&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div id=&quot;subnavigation&quot;&gt;...&lt;/div&gt;
+	&lt;div id=&quot;content&quot; class=&quot;#scope#&quot;&gt;
+
+		Individual content goes here
+
+	&lt;/div&gt;
+	&lt;div id=&quot;feedback&quot; class=&quot;i:feedback&quot;&gt;...&lt;/div&gt;
+	&lt;div id=&quot;footer&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+				</code>
+
+				<div class="image">
+					<img src="img/vestas-page-model.png" />
+				</div>
+
+				<h3>Structural elements</h3>
+
+				<h4 id="section-page">#page</h4>
+				<code>
+&lt;div id=&quot;page&quot; class=&quot;i:page&quot;&gt;
+				</code>
+				<p>This tag wraps the entire page, ensures correct position on screen when using overlays and such. Furthermore this tag is the basis for initialization of the page controller. Thus, this tag and it's class cannot be omitted.</p>
+				<p>The <strong>i:page</strong>-class is an <a href="js-init.html">initalizer class</a>. This class invokes the primary page controller on the #page-node. The page controller initalizes the navigation, user menu, hints and overlays. It also extends the #page-node with properties and references used by other initializers and utility functions.</p>
+
+
+				<h4 id="section-header">#header</h4>
+				<code>
+&lt;div id=&quot;header&quot;&gt;
+				</code>
+				<p>This node is fixed to the top of the browsers viewable area. It contains some important page elements. The .client (client name and back link), the <a href="#section-user">.user</a> (current user information and account maintenance dropdown menu) and the <a href="#section-navigation">#navigation</a> (primary navigation dropdown).</p>
+
+
+				<h4 id="section-user">.user</h4>
+				<code>
+&lt;div class=&quot;user&quot;&gt;
+	&lt;h3&gt;#user-name#&lt;/h3&gt;
+	&lt;div class=&quot;notification&quot;&gt;#optional notification count#&lt;/div&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;h4&gt;&lt;a href=&quot;#user-account-link#&quot;&gt;#user-account-option#&lt;/a&gt;&lt;/h4&gt;
+			&lt;div class=&quot;notification&quot;&gt;#optional notification text#&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;signout&quot;&gt;
+			&lt;h4&gt;&lt;a href=&quot;/util/SECLogoff&quot;&gt;Sign Out&lt;/a&gt;&lt;/h4&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+				</code>
+				<p>
+					H3 for user name.<br />
+					UL for menu options.<br />
+					Add as many LI's as needed.<br />
+					Each LI requires H4 for item title.<br />
+					Use regular A with HREF for links.<br />
+					Each LI can have an optional <a href="#section-notification">.notification</a>.
+				</p>
+				<p>Keep LI.signout as last element in UL.</p>
+				<p>This element is extended with JavaScript. The HTML must be as specified or the JavaScript might not work as intended.</p>
+
+
+				<h4 id="section-navigation">#navigation</h4>
+				<code>
+&lt;div id=&quot;navigation&quot;&gt;
+	&lt;h3&gt;Launch App&lt;/h3&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;h4&gt;&lt;a href=&quot;#link#&quot; target=&quot;_blank&quot;&gt;#name#&lt;/a&gt;&lt;/h4&gt;
+			&lt;div class=&quot;notification&quot;&gt;#optional notification#&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;add&quot;&gt;&lt;h4&gt;&lt;a href=&quot;#link#&quot;&gt;Add Application&lt;/a&gt;&lt;/h4&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+				</code>
+				<p>
+					H3 for Navigation name.<br />
+					UL for menu options.<br />
+					Add as many LI's as needed.<br />
+					Each LI requires H4 for item title.<br />
+					Use regular A with HREF for links.<br />
+					Each LI can have an optional <a href="#section-notification">.notification</a>.
+				</p>
+				<p>Keep LI.add as last element in UL.</p>
+				<p>This element is extended with JavaScript. The HTML must be as specified or the JavaScript might not work as intended.</p>
+
+
+				<h4 id="section-subnavigation">#subnavigation</h4>
+				<code>
+&lt;div id=&quot;subnavigation&quot;&gt;
+	&lt;ul&gt;
+		&lt;li class=&quot;selected&quot;&gt;&lt;h4&gt;&lt;a href=&quot;#link#&quot;&gt;#name#&lt;/a&gt;&lt;/h4&gt;&lt;/li&gt;
+		&lt;li&gt;
+			&lt;h4&gt;&lt;a href=&quot;#link#&quot;&gt;#name#&lt;/a&gt;&lt;/h4&gt;
+			&lt;div class=&quot;notification&quot;&gt;#optional notification#&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;ul class=&quot;actions&quot;&gt;...&lt;/ul&gt;
+&lt;/div&gt;
+				</code>
+				<p>
+					H3 for Navigation name.<br />
+					UL for menu options.<br />
+					Add as many LI's as needed.<br />
+					Each LI requires H4 for item title.<br />
+					Use regular A with HREF for links.<br />
+					Each LI can have an optional <a href="#section-notification">.notification</a>.<br />
+					LI.selected sets selected state for current LI.<br />
+					UL.actions for page specific service-navigation.
+				</p>
+
+
+				<h4 id="section-subnavigation-actions">#subnavigation .actions</h4>
+				<code>
+&lt;ul class=&quot;actions&quot;&gt;
+	&lt;li class=&quot;i:sharepage&quot;&gt;&lt;a href=&quot;#link#&quot; class=&quot;button tool&quot;&gt;Share this page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+				</code>
+				<p>The #subnavigation also contains a page-specific &quot;share this page&quot; feature. The LI has an <strong>i:sharepage</strong>-class <a href="js-init.html">initalizer class</a>, which loads and shows the sharing panel and sends sharing requests to the server.</p>
+				<p><strong>i:sharepage</strong> uses the value of the A-href to load the sharing panel. It submits the sharing as specified in the loaded HTML form. See <a href="html-form.html">FORM documentation</a> for details.</p>
+
+
+				<h4 id="section-content">#content</h4>
+				<code>
+&lt;div id=&quot;content&quot; class=&quot;#scope#&quot;&gt;...&lt;/div&gt;
+				</code>
+				<p>This is where your content generally goes. Unless you are extending the overall page functionality you should not add code anywhere but here.</p>
+				<p>Use the #content-node class attribute to specify your scope. If your page layout fails, check if your #content class is set correctly.</p>
+
+
+				<h4 id="section-feedback">#feedback</h4>
+				<code>
+&lt;div id=&quot;feedback&quot; class=&quot;i:feedback&quot;&gt;
+	&lt;h3&gt;&lt;a href=&quot;#link#&quot;&gt;Feedback&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+				</code>
+				<p>The #feedback is a side-wide feedback feature. The #feedback-node has an <strong>i:feedback</strong>-class <a href="js-init.html">initalizer class</a>, which loads and shows feedback panel and sends feedback to the server.</p>
+				<p><strong>i:feedback</strong> uses the value of the A-href to load the feedback panel. It submits the feedback as specified in the loaded HTML form. See <a href="html-form.html">FORM documentation</a> for details.</p>
+
+
+				<h4 id="section-footer">#footer</h4>
+				<code>
+&lt;div id=&quot;footer&quot;&gt;
+	&lt;div class=&quot;tagline&quot;&gt;Wind. It means the world to us.&amp;trade;&lt;/div&gt;
+&lt;/div&gt;
+				</code>
+				<p>Places at the bottom of the page. Should always be the last element in #page. Content is actually hidden behind a graphic.</p>
+
+
+
+				<h3>General conventions</h3>
+
+
+				<h4 id="section-notification">.notification</h4>
+				<code>
+&lt;div class=&quot;notification&quot;&gt;...&lt;/div&gt;
+				</code>
+				<p>
+					The .notification node can be inserted when specified.<br />
+					It is always optional, and the surrounding HTML will collapse appropriately if .notification is left out.<br />
+					As a conventions the .notification is always placed right after the H4 it relates to.<br />
+					The node will be manipulated by JavaScript and the HTML must be as specified to work properly.
+				</p>
+				<p>Add .disabled class to .notification node to invoke disabled state.</p>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<div class="tagline">Wind. It means the world to us.&trade;</div>
+	</div>
+
+</div>
+
+</body>
+</html>

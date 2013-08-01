@@ -1,0 +1,16 @@
+#content .banner {height: 180px; margin-bottom: 20px; background: red; overflow: hidden;}
+#content .banner a {display: block; height: 100%; text-indent: -5000px; background: blue; overflow: hidden;}
+
+/* 50 Gigawatts banner */
+#content .banner.gigawatts50 {background: url(/img/banner_gigawatts50_bg.png) no-repeat;}
+#content .banner.gigawatts50 a {background: url(/img/banner_gigawatts50_txt.png) no-repeat;}
+
+/* App store banner with 3 apps */
+#content .banner.appstore div {float: left; height: 100%; width: 33%; background: green;}
+#content .banner.appstore div a {display: block; height: 100%; background: yellow;}
+#content .banner.appstore div.app1 {background: url(/img/banner_appstore_01_bg.jpg) no-repeat;}
+#content .banner.appstore div.app1 a {background: url(/img/banner_appstore_01_txt.png) no-repeat left bottom;}
+#content .banner.appstore div.app2 {background: url(/img/banner_appstore_02_bg.jpg) no-repeat;}
+#content .banner.appstore div.app2 a {background: url(/img/banner_appstore_02_txt.png) no-repeat left bottom;}
+#content .banner.appstore div.app3 {width: 34%; background: url(/img/banner_appstore_03_bg.jpg) no-repeat;}
+#content .banner.appstore div.app3 a {background: url(/img/banner_appstore_03_txt.png) no-repeat left bottom;}

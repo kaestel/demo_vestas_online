@@ -1,0 +1,139 @@
+#content {min-height: 400px; text-align: left; margin: 0 40px;}
+
+
+#content .box {width: 100%; border-radius: 3px; margin-bottom: 37px; overflow: hidden; background-color: #ffffff;
+	-moz-box-shadow: 0 2px 2px #888; 
+	box-shadow: 0 2px 2px #888; 
+}
+
+/* Using div.header as tr.header shouldn't get the style */
+#content .box div.header {background: #adafaf; height: 37px; position: relative; z-index: 5;
+  -moz-box-shadow: 0 1px 2px #333;
+	box-shadow: 0 1px 2px #333;
+}
+#content .box .header h2 {font-size: 14px; line-height: 37px; color: #ffffff; font-weight: bold; padding-left: 14px; float: left;}
+#content .box .header .notification {float: left; background: #37424a; border-radius: 2px; padding: 3px 5px 2px; color: #ecf5fb; margin: 10px 0 0 8px; font-size: 12px; font-weight: bold; line-height: 14px;}
+
+
+#content .box .header ul.actions {float: left; padding: 5px 5px 0 5px;}
+#content .box .header ul.actions li {height: 27px; width: 33px;}
+#content .box .header ul.actions li a {height: 27px; display: block; overflow: hidden; text-indent: -9999px;}
+#content .box .header ul.actions li.back {background: transparent url(/img/bg_widget_actions.png) no-repeat -76px 0px;}
+#content .box .header ul.actions li.back:hover {background-position: -76px -47px;}
+
+#content .box .body {min-height: 10px; position: relative; z-index: 2;}
+
+
+#content .box .search {background-color: #cccccc; padding: 5px 20px; font-size: 0; margin-top: 20px; height: 27px;}
+
+
+
+/* GENERAL CONTENT */
+#content .box .body h2,
+#content .box .body h3,
+#content .box .body h4,
+#content .box .body h5,
+#content .box .body p,
+#content .box .body .wysiwyg ul,
+#content .box .body ul.list,
+#content .box .body dl.list,
+#content .box .body img.picture {padding: 0 20px;}
+
+#content .box .body h2,
+#content .box .body h3 {font-size: 18px; line-height: 20px; font-weight: bold; margin-bottom: 17px; margin-top: 34px;}
+#content .box .body h4 {font-size: 14px; line-height: 16px; font-weight: bold; margin-bottom: 5px;}
+#content .box .body p {margin-bottom: 17px; max-width: 600px;}
+#content .box .body p a {text-decoration: none; color: #0091D7;}
+#content .box .body p a:hover {text-decoration: underline;}
+
+
+/* TODO FORM */
+#content .box .body fieldset h4 {font-weight: bold;}
+/*TEMP*/
+#content .box .body h5 {margin-bottom: 3px;}
+/*TEMP*/
+
+#content .box .body .wysiwyg ul,
+#content .box .body ul.list {margin-bottom: 17px;}
+#content .box .body .wysiwyg ul li,
+#content .box .body ul.list li {margin-bottom: 5px;}
+#content .box .body dl.list {}
+#content .box .body dl.list dt {font-weight: bold;}
+#content .box .body dl.list dd {color: #adafaf; padding-bottom: 17px;}
+#content .box .body img.picture {margin-bottom: 17px;}
+
+
+
+
+/* GENERAL TABLE */
+#content .box .body table {border-collapse: collapse; margin: 0; padding: 0; width: 100%;}
+#content .box .body table * {font-size: 13px;}
+
+#content .box .body th {background: #eaeae8; padding: 9px 10px 4px 0; font-weight: bold; color: #37424a; font-size: 11px; text-align: left;}
+#content .box .body th:first-child {padding-left: 20px;}
+
+#content .box .body td {border-top: 1px solid #eaebeb; padding: 14px 10px 12px 0; vertical-align: top;}
+#content .box .body td:first-child {padding-left: 20px;}
+#content .box .body tr:hover td {background-color: #ecf5fb;}
+
+/* First row in content needs a different border color */
+#content .box .body tr:first-child + tr + tr td {border-color: #e0e0df;}
+
+
+#content .body table .header th.sortby {cursor: pointer;}
+#content .body table .header th span.sort {background: transparent url(/img/bg_sort_arrows.png) no-repeat center center; width: 18px; display: inline-block; height: 16px; vertical-align: middle;}
+
+#content .body table .header th.desc span.sort {background-position: 8px 5px;}
+#content .body table .header th.asc span.sort {background-position: 8px -47px;}
+
+
+
+/* GENERAL VCARD */
+#content .box .body .vcard {padding: 0 20px; overflow: hidden;}
+#content .box .body .vcard .image {float: left; padding-top: 4px;}
+#content .box .body .vcard .image img {width: 60px;}
+#content .box .body .vcard .name {padding-left: 79px; font-weight: bold; font-size: 14px;}
+#content .box .body .vcard .role,
+#content .box .body .vcard .org,
+#content .box .body .vcard .tel,
+#content .box .body .vcard .email {padding-left: 79px; line-height: 16px;}
+#content .box .body .vcard .tel a,
+#content .box .body .vcard .email a {line-height: 16px; color: #0091d7;}
+
+
+/* TABS */
+#content .box .body .tabs {font-size: 0; margin-top: 20px;}
+#content .box .body .tabs .tab {display: inline-block; vertical-align: top; cursor: pointer;}
+#content .box .body .tabs .tab:first-child {padding-left: 20px;}
+        
+#content .box .body .tabs .tab .header {height: auto; background: #cccccc; border: 1px solid #aaaaaa; border-bottom: none; border-top-left-radius: 4px; border-top-right-radius: 4px; margin-top: 4px; box-shadow: none;}
+#content .box .body .tabs .tab .header h4 {padding: 6px 20px; font-size: 14px; line-height: 18px; margin: 0; font-weight: normal;}
+#content .box .body .tabs .tab .body {display: none;}
+        
+#content .box .body .tabs .tab:hover .header {background: #ffffff;}
+#content .box .body .tabs .tab.selected .header {background: #ffffff; margin-top: 0; margin-bottom: -1px; border-bottom: 1px solid #ffffff;}
+#content .box .body .tabs .tab.selected .header h4 {padding: 8px 20px; font-weight: bold;}
+        
+#content .box .body .tabs .tab_panes {display: block; clear: both; border-top: 1px solid #aaaaaa; border-bottom: 1px solid #aaaaaa;}
+#content .box .body .tabs .tab_panes .body {display: none; padding: 20px 0 0 0;}
+#content .box .body .tabs .tab_panes .body.selected {display: block;}
+
+
+/* ATTACHMENTS */
+#content .box .body .attachments {overflow: hidden;}
+
+#content .box .body .attachments h5 {font-weight: normal; float: left; clear: right; margin: 0 0 0 20px; padding: 5px 7px 3px; color: #5e6365; background: #eaeae8; border: 1px solid #d6d7d7; border-bottom: none; border-top-left-radius: 2px; border-top-right-radius: 2px;}
+#content .box .body .attachments ul.list {clear: left; border-top: 1px solid #d6d7d7; border-bottom: 1px solid #d6d7d7; margin: 0 20px; padding: 12px 0 0;}
+#content .box .body .attachments ul.list li {padding: 0 0 6px 24px; background: transparent url(/img/bg_doctypes.png) no-repeat 0 100px; line-height: 16px;}
+#content .box .body .attachments ul.list li a {font-size: 12px;}
+#content .box .body .attachments ul.list li.pdf {background-position: 0 0;}
+#content .box .body .attachments ul.list li.doc {background-position: 0 -50px;}
+
+
+/* NOTICE */
+#content .notice {margin: 0 auto; overflow: hidden;}
+#content .notice .inner {margin-bottom: 20px; background: #d7f5bf url(/img/bg_notice.png) no-repeat 21px 8px;}
+#content .notice.error .inner {background-color: #f0bfbf; background-position: 21px -192px;}
+#content .notice p {padding: 13px 20px 13px 58px; color: #71be33; background: url(/img/bg_notice_buttons.png) no-repeat right 0; cursor: pointer;}
+#content .notice.error p {color: #c30000; background-position: right -200px;}
+#content .notice.receipt {}

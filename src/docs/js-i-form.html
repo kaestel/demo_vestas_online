@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- (c) & (p) hvadhedderde.com 2011 //-->
+	<!-- All material protected by copyrightlaws, as if you didnt know //-->
+	<title>Vestas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_desktop_include.css" />
+	<script type="text/javascript" src="/js/lib/seg_desktop_include.js"></script>
+</head>
+<body>
+
+<div id="page" class="i:page">
+
+	<div id="header">
+		<div class="c400">
+
+			<div class="info">
+				<div class="jumpboardlink"><a href="/docs/index.html" title="Back to documentation">Documentation</a></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="banner"></div>
+
+	<div id="subnavigation">
+		<ul>
+			<li><h4><a href="index.html">Docs home</a></h4></li>
+			<li><h4><a href="html-intro.html">HTML</a></h4></li>
+			<li class="selected"><h4><a href="js-intro.html">JavaScript</a></h4></li>
+		</ul>
+	</div>
+
+	<div id="content" class="docs">
+
+		<div class="box">
+			<div class="header">
+				<h2>i:form</h2>
+			</div>
+
+			<div class="body">
+
+				<h3>Form</h3>
+
+				<h3>Basic features</h3>
+				<p>
+					The extended form will handle events, and provides callbacks if you want to overwrite
+					any default functionality.<br />
+					It provides automatic validation on any &lt;div class=&quot;field&quot;&gt; within the &lt;form&gt;.
+				</p>
+				<p>
+					Loading screens are also handled by the form, which invokes a loader when submitted, and removes it
+					when response is received and processed.
+				</p>
+				<p>
+					Error- or success-messages from the server are automatically processed and shown on the page.
+				</p>
+
+				<h3>Methods</h3>
+				<p>
+					<em>get</em> (default) - regular get, adding parameters to url.
+				</p>
+				<p>
+					<em>post</em> - regular post.
+				</p>
+				<p>
+					<em>script</em> - script injection in head (jsonp method).
+				</p>
+
+				<h3>Variations</h3>
+
+				<h4>Form submit types</h4>
+				<p>
+					<em>type:manual</em> (default) - submit buttons and [ENTER] submits the form via AJAX request.
+				</p>
+				<p>
+					<em>type:auto</em> - submits the form onload via AJAX request. Can be used to pre-fill search result.
+					Additional AJAX-based submits can be done manually.
+				</p>
+				<p>
+					<em>type:html</em> - submit buttons and [ENTER] submits the form as a regular HTML form.
+				</p>
+
+				<h4>Send data options</h4>
+				<p><em>send:parameters</em> (default) - send data as parameters. Ex.: varname=var</p>
+				<p><em>send:json</em> - send data as JSON string. Ex.: {"varname":"var"}</p>
+				<p><em>send:jdata</em> - send data as JSON in jdata parameter. Ex.: jdata={"varname":"var"}</p>
+
+
+
+				<h3>Response handling</h3>
+
+				<h4>Parse response to template</h4>
+				<p>
+					If you want a JSON response to be parsed directly into a template, just add a .template element
+					inside your form.
+				</p>
+				<code>
+&lt;form action=&quot;servlet.json&quot; method=&quot;get&quot; class=&quot;i:form type:auto&quot;&gt;
+	&lt;table&gt;
+	&lt;tr class=&quot;header&quot;&gt;
+		&lt;th class=&quot;id&quot;&gt;ID&lt;/th&gt;
+		&lt;th class=&quot;title&quot;&gt;Title&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr class=&quot;template&quot;&gt;
+		&lt;td&gt;{agreement_id}&lt;/td&gt;
+		&lt;td&gt;&lt;a href=&quot;um-agreement.html?agreement_id={agreement_id}&quot;&gt;{agreement_title}&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/table&gt;
+&lt;/form&gt;
+				</code>
+
+
+				<h3>Forward URL</h3>
+				<p>
+					Add an input with name=&quot;response_success_forward_url&quot; if you want to forward the user to
+					another url, when the form submits successfully (submit returns success).
+				</p>
+				<p>
+					If you want to transfer parameters from the response to the forward url, add an input with
+					name=&quot;response_success_forward_parameters&quot; and state your parameters here. Use comma to
+					separate parameteres.
+				</p>
+
+				<h3>Callback functions</h3>
+
+				<h4>form.submitted</h4>
+				<p>
+					When the form is validated and ready to submit, this callback function will be invoked. <strong>This is
+					a predefined function</strong>, which can be overwritten if custom submit handling is required.
+				</p>
+
+				<h4>form.changed</h4>
+				<p>
+					When the form is changed, meaning, when any field of the form throws an onchange event, this
+					callback function is invoked. Declare this function to handle the event. Can be used to change 
+					button state when the form content is changed.
+				</p>
+
+				<h4>form.updated</h4>
+				<p>
+					When the form is changed, meaning, when any typing, clicking or selecting in fields, this
+					callback function is invoked. Declare this function to handle the event. Can be used to change 
+					button state when the form content is changed.
+				</p>
+
+				<h4>form.validationFailed</h4>
+				<p>
+					If attempt is made to submit the form, but validation fails, this callback function is invoked.
+					Can be used to create customized error handling.
+				</p>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<div class="tagline">Wind. It means the world to us.&trade;</div>
+	</div>
+
+</div>
+
+</body>
+</html>

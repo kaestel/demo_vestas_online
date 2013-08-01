@@ -1,0 +1,215 @@
+{
+    "success": true,
+    "result": [
+        {
+            "account_id": "TEST1",
+			"selected": false,
+            "account_name": "first level 1",
+            "children": []
+        },
+        {
+            "account_id": "TEST3",
+			"selected": false,
+            "account_name": "first level 2",
+            "children": [
+                {
+                    "account_id": "0000109755",
+					"selected": false,
+                    "account_name": "Second level 1",
+                    "children": [
+	                	{
+	                    	"account_id": "0000109756",
+							"selected": false,
+	                    	"account_name": "Third level 1",
+	                    	"children": [
+				                {
+				                    "account_id": "0000109757",
+									"selected": true,
+				                    "account_name": "forth level 1",
+				                    "children": [
+					                	{
+					                    	"account_id": "0000109758",
+											"selected": false,
+					                    	"account_name": "fifth level 1",
+					                    	"children": [
+								                {
+								                    "account_id": "0000109759",
+													"selected": "selected",
+								                    "account_name": "sixth level 1",
+								                    "children": [
+									                	{
+									                    	"account_id": "0000109760",
+															"selected": false,
+									                    	"account_name": "seventh level 1",
+									                    	"children": [
+												                {
+												                    "account_id": "0000109761",
+																	"selected": "true",
+												                    "account_name": "8 level 1",
+												                    "children": [
+													                	{
+													                    	"account_id": "0000109762",
+																			"selected": false,
+													                    	"account_name": "9 level 1",
+													                    	"children": [
+																                {
+																                    "account_id": "0000109763",
+																					"selected": false,
+																                    "account_name": "10 level 1",
+																                    "children": [
+																	                	{
+																	                    	"account_id": "0000109764",
+																							"selected": false,
+																	                    	"account_name": "11 level 1",
+																	                    	"children": [
+																				                {
+																				                    "account_id": "0000109765",
+																									"selected": false,
+																				                    "account_name": "12 level 1",
+																				                    "children": [
+																					                	{
+																					                    	"account_id": "0000109766",
+																											"selected": false,
+																					                    	"account_name": "13 level 1",
+																					                    	"children": [
+																								                {
+																								                    "account_id": "0000109767",
+																													"selected": false,
+																								                    "account_name": "14 level 1",
+																								                    "children": [
+																									                	{
+																									                    	"account_id": "0000109768",
+																															"selected": false,
+																									                    	"account_name": "15 level 1",
+																									                    	"children": [
+																												                {
+																												                    "account_id": "0000109769",
+																																	"selected": false,
+																												                    "account_name": "16 level 1",
+																												                    "children": [
+																													                	{
+																													                    	"account_id": "0000109770",
+																																			"selected": false,
+																													                    	"account_name": "17 level 1",
+																													                    	"children": [
+																																                {
+																																                    "account_id": "0000109771",
+																																					"selected": false,
+																																                    "account_name": "18 level 1",
+																																                    "children": [
+																																	                	{
+																																	                    	"account_id": "0000109772",
+																																							"selected": false,
+																																	                    	"account_name": "19 level 1",
+																																	                    	"children": [
+																																			         	       {
+																																				                    "account_id": "0000109773",
+																																									"selected": false,
+																																				                    "account_name": "20 level 1",
+																																				                    "children": [
+																																					                	{
+																																					                    	"account_id": "0000109774",
+																																											"selected": false,
+																																					                    	"account_name": "21 level 1",
+																																					                    	"children": [
+																																								                {
+																																								                    "account_id": "0000109775",
+																																													"selected": false,
+																																								                    "account_name": "22 level 1",
+																																								                    "children": [
+																																									                	{
+																																									                    	"account_id": "0000109776",
+																																															"selected": false,
+																																									                    	"account_name": "23 level 1",
+																																									                    	"children": [
+																																												                {
+																																												                    "account_id": "0000109778",
+																																																	"selected": false,
+																																												                    "account_name": "24 level 1",
+																																												                    "children": [
+																																													                	{
+																																													                    	"account_id": "0000109779",
+																																																			"selected": false,
+																																													                    	"account_name": "25 level 1",
+																																													                    	"children": [
+
+																																																			]
+																																													                	}
+																																																	]
+																																												                }
+
+																																															]
+																																									                	}
+																																													]
+																																								                }
+
+																																											]
+																																					                	}
+																																									]
+																																				                }
+																																							]
+																																	                	}
+																																					]
+																																                }
+
+																																			]
+																													                	}
+																																	]
+																												                }
+
+																															]
+																									                	}
+																													]
+																								                }
+																											]
+																					                	}
+																									]
+																				                }
+
+																							]
+																	                	}
+																					]
+																                }
+
+																			]
+													                	}
+																	]
+												                }
+
+															]
+									                	}
+													]
+								                }
+
+											]
+					                	}
+									]
+				                }
+							
+							]
+	                	}
+					]
+                },
+                {
+                    "account_id": "0000109745",
+					"selected": true,
+                    "account_name": "Second level 2",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "account_id": "TEST2",
+			"selected": false,
+            "account_name": "first level 3",
+            "children": [
+	            {
+	                 "account_id": "0000109746",
+					 "selected": true,
+	                 "account_name": "Second level 3",
+	                 "children": []
+	             }
+			]
+        }
+    ]
+}

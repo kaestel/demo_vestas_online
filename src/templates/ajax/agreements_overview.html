@@ -1,0 +1,77 @@
+<div id="content" class="UserManagement agreements">
+
+	<div class="box">
+		<div class="header">
+			<ul class="actions">
+				<li class="back"><a href="#">Back</a></li>
+			</ul>
+		</div>
+		<div class="body">
+
+			<h3>Agreements</h3>
+			<p>The list below contains the total amount of agreements. It is also possible to a create a new agreement.</p>
+			<ul class="actions">
+				<li class="new"><a href="/templates/um-agreement-new.html" class="button primary">Create new agreement</a></li>
+			</ul>
+
+		</div>
+
+		<form action="/templates/ajax/MDSearchAgreements.json" method="GET" class="i:form type:auto i:SearchAgreements">
+			<input type="hidden" name="sort" value="asc" />
+			<input type="hidden" name="sort_column" value="title" />
+
+			<div class="search">
+				<div class="filters">
+					<fieldset>
+						<div class="field string query">
+							<label for="input_query">Search agreement</label>
+							<input type="text" name="query" id="input_query" value="" />
+							<p class="hint">Search agreement</p>
+							<p class="error">Search failed</p>
+						</div>
+					</fieldset>
+					<ul class="actions">
+						<li class="reset"><input type="reset" class="button reset" value="Reset" /></li>
+						<li class="submit"><input type="submit" class="button search" value="Search" /></li>
+					</ul>
+					<fieldset>
+						<div class="field select filter i:filterSelector">
+ 							<label for="select_filter">Filter</label>
+							<select name="filter" id="select_filter">
+								<option value="" selected>No filter</option>
+								<option value="open">Open</option>
+								<option value="expired">Expired</option>
+								<option value="pending">Pending</option>
+								<option value="disabled">Disabled</option>
+							</select>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+
+			<div class="body">
+				<table>
+				<tr class="header">
+					<th class="id">ID</th>
+					<th class="sortby sortby:title title">Title</th>
+					<th class="expiry">Expiry</th>
+					<th class="sortby sortby:account account">Account</th>
+					<th class="sortby sortby:accountid accountid">Account ID</th>
+					<th class="sortby sortby:status status">Status</th>
+				</tr>
+				<tr class="template">
+					<td>{agreement_id}</td>
+					<td><a href="/templates/um-agreement.html?agreement_id=">{agreement_title}</a></td>
+					<td class="i:dateView">{agreement_expire_date}</td>
+					<td><a href="/templates/um-account-agreements.html?account_id={account_id}">{account_name}</a></td>
+					<td>{account_id}</td>
+					<td>{agreement_status}</td>
+				</tr>
+				</table>
+			</div>
+
+		</div>
+
+	</form>
+
+</div>

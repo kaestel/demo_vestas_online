@@ -1,0 +1,83 @@
+/* View message page */
+#content.MyAccount .message {border-right: 1px solid #eaebeb; padding-bottom: 12px; position: relative; min-height: 200px; overflow: hidden;}
+#content.MyAccount .message .message {border: none; padding: 0; min-height: 0;}
+#content.MyAccount .message p.date {color: #adafaf; font-size: 11px; font-weight: bold; position: absolute; top: 39px; right: 0;}
+#content.MyAccount .message h3.subject {padding-bottom: 4px; margin-bottom: 0;}
+#content.MyAccount .message h4.sender {font-weight: normal; margin-bottom: 17px;}
+#content.MyAccount .vcard.person {border-bottom: 1px solid #eaebeb; padding-bottom: 30px;}
+
+/* Account page with messages list */
+#content.MyAccount .c400.support {background: #cfe7f5; position: relative;}
+#content.MyAccount .c400.support .c266 {background: #ffffff;}
+
+#content.MyAccount .personal_details {padding-top: 23px;}
+#content.MyAccount .personal_details dl.list {overflow: hidden;}
+#content.MyAccount .personal_details dl.list dt {float: left; width: 180px; padding-bottom: 6px; clear: left; font-size: 14px;}
+#content.MyAccount .personal_details dl.list dd {float: left; clear: right; padding-bottom: 6px; color: #37424a;}
+#content.MyAccount .personal_details dl.list dd.email {padding-bottom: 35px;}
+#content.MyAccount .personal_details dl.list dd.organisations {padding-bottom: 30px;}
+#content.MyAccount .personal_details dl.list dt.language {padding-top: 8px;}
+#content.MyAccount .personal_details dl.list dd.language .field.select {padding: 0; height: auto;}
+#content.MyAccount .personal_details dl.list dd.language .field.select select {width: 250px;}
+#content.MyAccount .personal_details .password_settings {}
+#content.MyAccount .personal_details .password_settings h5 {font-size: 14px; border-top: 1px solid #eaebeb; margin: 16px 20px 0 20px; padding: 20px 0 0 0;}
+#content.MyAccount .personal_details p.toggle_password {color: #0091d7; padding-left: 50px; padding-top: 6px; padding-bottom: 10px; line-height: 19px; background: url(/img/bg_icons.png) no-repeat 20px -94px; cursor: pointer;}
+#content.MyAccount .personal_details .password_settings.closed p.toggle_password {background-position: 20px 6px;}
+#content.MyAccount .personal_details .password_fields {padding-bottom: 10px;}
+#content.MyAccount .personal_details .password_settings.closed .password_fields {display: none;}
+#content.MyAccount .box .body .field.password {height: 55px;}
+#content.MyAccount .personal_details .password_settings .field label {float: left; width: 180px; clear: left; font-size: 14px; padding-top: 6px; font-weight: bold;}
+#content.MyAccount .personal_details .password_settings .field input {float: left; clear: right; width: 230px;}
+#content.MyAccount .personal_details .actions {overflow: hidden;}
+#content.MyAccount .personal_details .actions li {margin: 0;}
+
+#content.MyAccount .c133.support h3 {color: #0091d7; margin-top: 20px; height: 160px; background: url(/img/ic_support_phone.png) no-repeat center bottom;}
+#content.MyAccount .c133.support .support_info {position: absolute; right: 0; bottom: 0; background: #0091d7;}
+#content.MyAccount .c133.support .support_info h4,
+#content.MyAccount .c133.support .support_info p,
+#content.MyAccount .c133.support .support_info a {color: #ffffff;}
+#content.MyAccount .c133.support .support_info h4 {font-size: 14px; font-weight: bold; padding-top: 20px; padding-bottom: 3px;}
+#content.MyAccount .c133.support .support_info p {padding-bottom: 18px;}
+
+/* Message list */
+#content.MyAccount .message_list td.read,
+#content.MyAccount .message_list td.star,
+#content.MyAccount .message_list td:first-child,
+#content.MyAccount .message_list th.read,
+#content.MyAccount .message_list th.star,
+#content.MyAccount .message_list th:first-child {padding: 10px 0 0 0;}
+
+#content.MyAccount .message_list th.read,
+#content.MyAccount .message_list th.star,
+#content.MyAccount .message_list th:first-child {padding-top: 0; padding-bottom: 0;}
+
+#content.MyAccount .message_list th.read,
+#content.MyAccount .message_list td.read,
+#content.MyAccount .message_list td:first-child {width: 56px;}
+#content.MyAccount .message_list th.star,
+#content.MyAccount .message_list td.star {width: 65px;}
+
+/* Cusomt positions for sort arrows because padding is removed */
+#content.MyAccount .body table .header th.read.desc span.sort,
+#content.MyAccount .body table .header th.star.desc span.sort {background-position: 3px 1px;}
+#content.MyAccount .body table .header th.read.asc span.sort,
+#content.MyAccount .body table .header th.star.asc span.sort {background-position: 3px -51px;}
+
+#content.MyAccount .message_list tr span.read,
+#content.MyAccount .message_list tr span.star {display: inline-block; text-indent: -5000px; width: 20px; height: 20px; overflow: hidden;}
+#content.MyAccount .message_list tr span.read {background: url(/img/bg_icons.png) no-repeat 2px -598px; margin-left: 18px;}
+#content.MyAccount .message_list tr span.star {background: url(/img/bg_icons.png) no-repeat 2px -798px; margin-left: 14px;}
+#content.MyAccount .message_list tr th span.read {height: 25px; background-position: 0 -592px;}
+#content.MyAccount .message_list tr th span.star {height: 25px; background-position: 0 -792px;}
+
+#content.MyAccount .message_list tr.is_read_false .read span {background-position: 2px -698px;}
+#content.MyAccount .message_list tr.is_read_false a,
+#content.MyAccount .message_list tr.is_read_false td {color: #0091d7;}
+#content.MyAccount .message_list tr.is_starred_true .star span {background-position: 2px -898px;}
+
+#content.MyAccount .message_list td.sender,
+#content.MyAccount .box .body .message_list table * td.sender a {font-weight: bold; font-size: 14px;}
+#content.MyAccount .message_list td.sender span.high_prio {display: inline-block; background: #e37222; font-size: 11px; font-weight: bold; color: #fff; padding: 3px 6px 1px 7px; margin: 0px 0 0 8px; line-height: normal; border-radius: 2px;}
+
+#content.MyAccount .message_list td.sender {width: 250px;}
+#content.MyAccount .message_list td.date {width: 120px;}

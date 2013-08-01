@@ -1,0 +1,52 @@
+.panel {width: 470px; text-align: left;}
+.panel .box {background: #ffffff; border: 1px solid #d5d6d2;
+	-moz-box-shadow: 0 2px 2px #d5d6d2;
+	box-shadow: 0 2px 2px #d5d6d2;
+}
+
+.panel .box .header {position: relative; height: 38px; border-bottom: 1px solid #d5d6d2; margin-bottom: 20px;}
+.panel .box .header h2 {font-size: 14px; padding: 10px 0 0 10px; line-height: 18px;}
+.panel .box .header ul {position: absolute; top: 9px; right: 10px; overflow: hidden;}
+.panel .box .header ul li {float: left;}
+.panel .box .header .actions .close {text-indent: -9999px; width: 20px; height: 20px; background: transparent url(/img/bg_closebutton.png) no-repeat; cursor: pointer;}
+.panel .box .header .actions .close:hover {background-position: 0 -20px;}
+
+.panel .box .body .field.text textarea {height: 290px;}
+
+.panel .box .body .actions {padding: 10px 20px 20px; overflow: hidden;}
+.panel .box .body .actions li {float: left; padding: 0;}
+
+.panel .box .body p {padding: 0 20px 15px;}
+
+.panel .notice {margin: 20px; display: block; overflow: hidden;}
+.panel .notice .inner {background: #d7f5bf url(/img/bg_notice.png) no-repeat 21px 8px;}
+.panel .notice.error .inner {background-color: #f0bfbf; background-position: 21px -192px;}
+.panel .box .body .notice p {padding: 13px 20px 13px 58px; color: #71be33; background: url(/img/bg_notice_buttons.png) no-repeat right 0; cursor: pointer;}
+.panel .box .body .notice.error p {color: #c30000; background-position: right -200px;}
+.panel .notice.receipt {}
+
+
+/* Feedback panel */
+.panel.feedback {position: absolute; right: 130px; top: 70px; z-index: 19;}
+.panel.feedback .field:first-child label {display: none;}
+.panel.feedback .box .body .field.text {padding-bottom: 0; height: 337px;}
+
+.panel.feedback .body.done form {display: none;}
+.panel.feedback .body.done .actions {display: none;}
+.panel.feedback .body.done .message {padding: 10px 30px 0;}
+
+.panel.feedback .box .body .actions {padding-top: 0;}
+.panel.feedback .box .body .actions li {padding: 0;}
+
+.panel.feedback .actions li.submit {margin-right: 6px;}
+.panel.feedback .actions li.text_counter_wrap {background: url(/img/bg_char_counter.png); padding: 0; width: 57px; height: 29px; overflow: hidden;}
+.panel.feedback .actions li.text_counter_wrap .text_counter {width: 51px; float: right; text-align: center; margin: 7px 1px 0 0; color: #5e6365; font-size: 12px;}
+
+/* Share this page panel */
+.panel.sharepage {position: absolute; right: 35px; top: 70px; z-index: 20;}
+.panel.sharepage .field.url_string label {display: none;}
+.panel.sharepage .box .body .field.url_string {height: auto; padding-bottom: 20px;}
+
+.panel.sharepage .body.done form {display: none;}
+.panel.sharepage .body.done .actions {display: none;}
+.panel.sharepage .body.done .message {padding: 10px 30px 0;}

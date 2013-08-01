@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- (c) & (p) hvadhedderde.com 2011 //-->
+	<!-- All material protected by copyrightlaws, as if you didnt know //-->
+	<title>Vestas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_desktop_include.css" />
+	<script type="text/javascript" src="/js/lib/seg_desktop_include.js"></script>
+</head>
+<body>
+
+<div id="page" class="i:page">
+
+	<div id="header">
+		<div class="c400">
+
+			<div class="info">
+
+				<div class="jumpboardlink"><a href="/templates/jumpboard.html" title="Jump Board">Jump Board</a></div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="banner"></div>
+	
+	<div id="content" class="logon i:logon">
+
+		<div class="box signin">
+			<div class="body">
+				<h3>Welcome to Vestas Online, please sign in</h3>
+				<form autocomplete="off" id="logonForm" name="logonForm" target="logonAppPage" method="post" action="" >
+					<input name="login_submit" type="hidden" value="on">
+					<input type="hidden" name="login_do_redirect" value="1" />
+					<input name="no_cert_storing" type="hidden" value="on">
+					<input type="hidden" name="j_salt" value="m+15dI5ifbaYpDpIhbwpSEw7UNI=" />
+					<input type="hidden" id="logonuidfield" name="j_username">
+
+					<fieldset>
+						<div class="field string required username">
+							<label for="logonemailfield">Username</label>
+							<input type="text" id="logonemailfield" value="" name="email" />
+							<p class="error">Enter a valid e-mail address</p>
+						</div>
+						<div class="field password required password">
+							<label for="logonpassfield">Password</label>
+							<input type="text" id="logonpassfield" name="j_password" value="" />
+							<a href="#" class="reset">Reset password</a>
+							<p class="error">Enter a valid password</p>
+						</div>
+						<ul class="actions">
+							<li class="submit"><input type="submit" value="Sign in" class="button primary" /></li>
+						</ul>
+					</fieldset>
+				</form>
+
+			</div>
+		</div>
+
+		<div class="box reset">
+			<div class="body">
+				<h3>Reset Your Password</h3>
+				<form name="logon" action="/templates/ajax/SECResetPassword" method="get">
+					<input type="hidden" name="" value="" />
+					<fieldset>
+						<div class="field email required">
+							<label for="reset_email">Please enter your e-mail adress and we will send you a link with a temporary password and a link to a page where you can reset your password.</label>
+							<input type="text" name="email" id="reset_email" value="" />
+							<p class="error">Enter a valid e-mail address</p>
+						</div>
+						<ul class="actions">
+							<li class="cancel"><a href="#" class="button">Cancel</a></li>
+							<li class="submit"><input type="submit" value="Submit adress" class="button primary" /></li>
+						</ul>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		
+		<div class="servicenavigation">
+			<div class="copyright">Copyright 2012 Vestas Wind Systems. All rights reserved.</div>
+			<ul>
+				<li><a href="#">Privacy policy</a></li>
+				<li><a href="#">Visit vestas.com</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>

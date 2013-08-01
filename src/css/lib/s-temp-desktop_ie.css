@@ -1,0 +1,152 @@
+#header {
+	box-shadow: 0 2px 4px #666666;
+}
+
+
+
+#header .user h3 {
+	*zoom: 1;
+	*display: inline;
+}
+#header .user .notification {
+	box-shadow: 0 2px 5px black;
+
+	*display: inline;
+	*zoom: 1;
+}
+#header .user ul {
+	box-shadow: 0 2px 4px #666666;
+}
+#header .user ul li h4 {
+	*zoom: 1;
+	*display: inline;
+}
+#header .user ul li .notification {
+	box-shadow: 0 2px 4px #666666;
+
+	*zoom: 1;
+	*display: inline;
+}
+
+
+
+#header #navigation ul {
+	box-shadow: 0 2px 4px #666666;
+}
+#header #navigation ul li h4 {
+	*zoom: 1;
+	*display: inline;
+}
+#header #navigation ul li .notification {
+	box-shadow: 0 2px 4px #666666;
+
+	*zoom: 1;
+	*display: inline;
+}
+
+
+
+#subnavigation ul li {
+	*display: inline;
+	*zoom: 1;
+}
+#subnavigation ul li h4 {
+	box-shadow: 0 2px 4px #666666;
+}
+#subnavigation ul li .notification {
+	box-shadow: 0 2px 4px #666666;
+}
+
+
+
+
+#content .widget {
+	box-shadow: 0 2px 4px #666666;
+
+	*zoom: 1;
+	*display: inline;
+}
+#content .widget .header {
+	box-shadow: 0 1px 4px #666666;
+
+	*margin: 0;
+}
+#content .widget .header h2 {
+	*zoom: 1;
+	*display: inline;
+}
+#content .widget .header .actions li ul {
+	box-shadow: 0 2px 4px #666666;
+}
+#content .widget .header .actions li ul li h4 {
+	*zoom: 1;
+	*display: inline;
+}
+#content .widget .header .actions li ul li .notification {
+	box-shadow: 0 2px 4px #666666;
+
+	*zoom: 1;
+	*display: inline;
+}
+#content .widgets .body .actions li {
+	*zoom: 1;
+	*display: inline;
+}
+
+
+
+#content.add_apps ul.apps {
+	background: #ffffff url(/img/bg_app_grid_ie8.png) repeat-y top center\9;
+}
+#content.add_apps .apps li.app {
+	*display: inline;
+	*zoom: 1;
+}
+#content.add_apps .apps ul.actions li {
+	*display: inline;
+	*zoom: 1;
+}
+
+
+
+#content.apps_details .box .details .app .actions li a {
+	*display: inline;
+	*zoom: 1;
+}
+
+
+
+a.button {box-shadow: 0 1px 4px #666666;}
+input.button {box-shadow: 0 1px 4px #666666;}
+a.button.primary {
+	*border-top: 1px solid #999999;
+	*border-left: 1px solid #999999;
+	*border-right: 1px solid #999999;
+	*border-bottom: 1px solid #999999;
+	*padding: 6px 15px;
+}
+input.button.primary {
+	*border-top: 1px solid #999999;
+	*border-left: 1px solid #999999;
+	*border-right: 1px solid #999999;
+	*border-bottom: 1px solid #999999;
+	*padding: 6px 15px;
+}
+a.button.disabled {
+	*border-top: 1px solid #999999;
+	*border-left: 1px solid #999999;
+	*border-right: 1px solid #999999;
+	*border-bottom: 1px solid #999999;
+	*padding: 6px 15px;
+}
+
+
+#content .box {
+	box-shadow: 0 2px 4px #666666; 
+}
+
+
+
+#content.logon .box {
+	*height: 295px;
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- (c) & (p) hvadhedderde.com 2011 //-->
+	<!-- All material protected by copyrightlaws, as if you didnt know //-->
+	<title>Vestas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_desktop_include.css" />
+	<script type="text/javascript" src="/js/lib/seg_desktop_include.js"></script>
+</head>
+<body>
+
+<div id="page" class="i:page">
+
+	<div id="header">
+		<div class="c400">
+
+			<div class="info">
+				<div class="jumpboardlink"><a href="/docs/index.html" title="Back to documentation">Documentation</a></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="banner"></div>
+
+	<div id="subnavigation">
+		<ul>
+			<li><h4><a href="index.html">Docs home</a></h4></li>
+			<li><h4><a href="html-intro.html">HTML</a></h4></li>
+			<li class="selected"><h4><a href="js-intro.html">JavaScript</a></h4></li>
+		</ul>
+	</div>
+
+	<div id="content" class="docs">
+
+		<div class="box">
+			<div class="header">
+				<h2>The Vestas package</h2>
+			</div>
+
+			<div class="body">
+
+				<h3>Functions</h3>
+				<p>The Vestas package is an extension of the <em>Util</em> object.</p>
+
+				<div class="function">
+					<div class="header">
+						<h4>u.notify</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">u.notify</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax"><span class="type">Void</span> = u.notify(<span class="type">String</span> <span class="var">message</span>, <span class="type">String</span> <span class="var">type</span> [, <span class="type">Node</span> <span class="var">target</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Notification handler - creates notification node and injects it appropriately.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>Parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">message</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> Message to be shown
+									</div>
+								</dd>
+
+								<dt><span class="var">type</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> Message type (receipt/error)
+									</div>
+								</dd>
+				
+								<dt><span class="var">target</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Node</span> Optional, any given node can be used as scope - Default is #content
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>Void</p>
+						</div>
+
+						<div class="examples"></div>
+					
+					</div>
+				</div>
+
+				<div class="function">
+					<div class="header">
+						<h4>u.loading</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">u.loading</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax"><span class="type">Void</span> = u.loading(<span class="type">Node</span> <span class="var">node</span>)</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Sets loading state on <span class="var">node</span>.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>Parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">node</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Node</span> node to set loading state on.
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>Void</p>
+						</div>
+
+						<div class="examples"></div>
+					
+					</div>
+				</div>
+
+				<div class="function">
+					<div class="header">
+						<h4>u.loaded</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">u.loaded</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax"><span class="type">Void</span> = u.loaded(<span class="type">Node</span> <span class="var">node</span>)</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>Removes loaded state from <span class="var">node</span>.</p>
+						</div>
+
+						<div class="parameters">
+							<h4>Parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">node</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Node</span> node to set loading state on.
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>Void</p>
+						</div>
+
+						<div class="examples"></div>
+					</div>
+				</div>
+
+				<div class="function">
+					<div class="header">
+						<h4>u.template</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">u.template</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax"><span class="type">Void</span> = u.template(<span class="type">Node</span> <span class="var">node</span>, <span class="type">Object</span> <span class="var">response</span>)</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Parses response into template node.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>Parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">node</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Node</span> Template node to use for response
+									</div>
+								</dd>
+								<dt><span class="var">response</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Object</span> JSON object with values to parse into template node.
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>HTML string</p>
+						</div>
+
+						<div class="examples"></div>
+					</div>
+				</div>
+
+				<div class="function">
+					<div class="header">
+						<h4>u.loadContent</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">u.loadContent</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax"><span class="type">Void</span> = u.loadContent(<span class="type">String</span> <span class="var">url</span>)</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>Loads content from url when page controller is done setting up the page.</p>
+						</div>
+
+						<div class="parameters">
+							<h4>Parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">url</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> url to load
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>Void</p>
+						</div>
+
+						<div class="examples"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<div class="tagline">Wind. It means the world to us.&trade;</div>
+	</div>
+
+</div>
+
+</body>
+</html>

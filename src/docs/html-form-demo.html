@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- (c) & (p) hvadhedderde.com 2011 //-->
+	<!-- All material protected by copyrightlaws, as if you didnt know //-->
+	<title>Vestas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_desktop_include.css" />
+	<script type="text/javascript" src="/js/lib/seg_desktop_include.js"></script>
+	<script type="text/javascript">
+		u.o.formTest = new function() {
+			this.init = function(form) {
+
+				form.validationFailed = function() {
+					alert("form failed validation");
+				}
+
+				form.changed = function() {
+					//alert("form is changed");
+				}
+
+				form.submitted = function() {
+					alert("form is submitted");
+				}
+			}
+		}
+
+	</script>
+</head>
+<body>
+
+<div id="page" class="i:page">
+
+	<div id="header">
+		<div class="c400">
+
+			<div class="info">
+				<div class="jumpboardlink"><a href="/docs/index.html" title="Back to documentation">Documentation</a></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="banner"></div>
+
+	<div id="subnavigation">
+		<ul>
+			<li><h4><a href="index.html">Docs home</a></h4></li>
+			<li class="selected"><h4><a href="html-intro.html">HTML</a></h4></li>
+			<li><h4><a href="js-intro.html">JavaScript</a></h4></li>
+		</ul>
+	</div>
+
+	<div id="content" class="docs">
+
+		<div class="box">
+			<div class="header">
+				<h2>Forms and buttons DEMO</h2>
+			</div>
+
+			<div class="body">
+
+				<h3>FORM</h3>
+
+				<form name="test_form" action="/docs/ajax/form-test.json" method="post" class="i:form i:formTest">
+
+					<fieldset>
+						<div class="field email required">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" value="" />
+							<p class="hint">Email (required)</p>
+							<p class="error">fejl 40</p>
+						</div>
+
+						<div class="field string">
+							<label for="string_1">String 1</label>
+							<input type="text" name="string_1" id="string_1" value="" />
+							<p class="hint">String (not required)</p>
+							<p class="error">fejl 40</p>
+						</div>
+
+						<div class="field string required">
+							<label for="string_2">String 2</label>
+							<input type="text" name="string_2" id="string_2" value="" />
+							<p class="hint">String (required)</p>
+							<p class="error">fejl 40</p>
+						</div>
+
+						<div class="field select">
+							<label for="select">Select</label>
+							<select name="select" id="select">
+								<option value="">Select language</option>
+							</select>
+							<p class="hint">Select</p>
+							<p class="error">fejl 40</p>
+						</div>
+
+						<div class="field text">
+							<label for="text">Textarea</label>
+							<textarea name="text" id="text"></textarea>
+							<p class="hint">Select</p>
+							<p class="error">fejl 40</p>
+						</div>
+						
+						<div class="field text required">
+							<label for="text">Textarea required</label>
+							<textarea name="text" id="text"></textarea>
+							<p class="hint">Select</p>
+							<p class="error">fejl 40</p>
+						</div>
+
+						<div class="field radio">
+							<input type="radio" name="radio" id="radio_1_a" value="radio_1_a" checked="checked" />
+							<label for="radio_1_a">Radio 1a</label>
+							<input type="radio" name="radio" id="radio_1_b" value="radio_1_b" />
+							<label for="radio_1_b">Radio 1b</label>
+						</div>
+						<div class="field radio">
+							<input type="radio" name="radio_2" id="radio_2" value="radio_2" />
+							<label for="radio_2">Radio 2</label>
+						</div>
+						
+						<div class="field checkbox">
+							<input type="checkbox" name="checkbox_1" id="checkbox_1" value="checkbox_1" checked="checked" />
+							<label for="checkbox_1">Checkbox 1</label>
+						</div>
+						<div class="field checkbox">
+							<input type="checkbox" name="checkbox_2" id="checkbox_2" value="checkbox_2" />
+							<label for="checkbox_2">Checkbox 2</label>
+						</div>
+					</fieldset>
+
+					<ul class="actions">
+						<li><a class="button">a.button</a></li>
+						<li><a class="button disabled">a.button disabled</a></li>
+						<li><a class="button primary">a.button primary</a></li>
+						<li><a class="button primary disabled">a.button primary disabled</a></li>
+						<li><a class="button tool">a.button tool</a></li>
+						<li><a class="button tool share">a.button.share tool</a></li>
+					</ul>
+					<ul class="actions">
+						<li><input type="submit" name="test1" class="button" value="button" /></li>
+						<li><input type="submit" name="test2" class="button disabled" value="button disabled" /></li>
+						<li><input type="submit" name="test3" class="button primary" value="button primary" /></li>
+						<li><input type="submit" name="test4" class="button primary disabled" value="button primary disabled" /></li>
+					</ul>
+				</form>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<div class="tagline">Wind. It means the world to us.&trade;</div>
+	</div>
+
+</div>
+
+</body>
+</html>

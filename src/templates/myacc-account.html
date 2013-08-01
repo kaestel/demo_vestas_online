@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- (c) & (p) hvadhedderde.com 2011 //-->
+	<!-- All material protected by copyrightlaws, as if you didnt know //-->
+	<title>Vestas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_desktop_include.css" />
+	<script type="text/javascript" src="/js/lib/seg_desktop_include.js"></script>
+</head>
+<body>
+
+<div id="page" class="i:page">
+
+	<div id="header">
+		<div class="c400">
+
+			<div class="info">
+
+				<div class="jumpboardlink"><a href="/templates/jumpboard.html" title="Jump Board">Jump Board</a></div>
+
+				<div class="user">
+					<h3>Henrik John Andersen</h3>
+					<div class="notification">12</div>
+					<ul>
+						<li><h4><a href="/templates/myacc-account.html">My Account</a></h4></li>
+						<li><h4><a href="#">My Documents</a></h4></li>
+						<li><h4><a href="logon.html">Sign Out</a></h4></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div id="navigation">
+				<h3>Launch App</h3>
+				<ul>
+					<li><h4><a href="#">Collaboration Room</a></h4></li>
+					<li><h4><a href="#">Document Sharing</a></h4></li>
+					<li>
+						<h4><a href="issue_manager.html">Issue Manager</a></h4>
+						<div class="notification">New version!</div>
+					</li>
+					<li><h4><a href="#">Performance Manager</a></h4></li>
+					<li class="add"><h4><a href="add_application.html">Add Application</a></h4></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="banner"></div>
+
+	<div id="subnavigation">
+		<ul>
+			<li class="selected"><h4><a href="myacc-account.html">My Account</a></h4></li>
+			<li><h4><a href="#">My Subscriptions</a></h4></li>
+			<li><h4><a href="#">Get Started</a></h4></li>
+			<li><h4><a href="#">Create Message</a></h4></li>
+		</ul>
+		<ul class="actions">
+			<li class="i:feedback"><a href="/templates/ajax/feedback.html" class="button tool feedback">Feedback</a></li>
+			<li class="i:sharepage"><a href="/templates/ajax/sharepage.html" class="button tool share">Share</a></li>
+		</ul>
+	</div>
+
+	<div id="content" class="MyAccount i:MyAccountPer">
+		
+		<div class="box">
+			<div class="header">
+				<h2>Personal Details</h2>
+			</div>
+			<div class="body">
+				<div class="c">
+					
+					<div class="c400 support">
+						<div class="c">
+							
+							<div class="c266">
+								<div class="personal_details">
+									<form action="/templates/ajax/MDSetLanguageAndPasswordForUserId.json" method="post" id="perdetails">
+										<input name="userid" value="vestasebizuser@gmail.com" type="hidden" />
+										<input name="pw_new" value="" type="hidden" />
+
+										<dl class="list">
+											<dt>Title:</dt>
+											<dd>Head of sales</dd>
+											<dt>Name:</dt>
+											<dd>Peter Hansen, Hans</dd>
+											<dt>Phone number:</dt>
+											<dd>+4512345678</dd>
+											<dt class="email">E-mail:</dt>
+											<dd class="email"><a href="mailto:vestasebizuser@gmail.com">vestasebizuser@gmail.com</a></dd>
+											<dt class="organisations">Organisation(s):</dt>
+											<dd class="organisations">Acciona USA, LLC<br />Acciona USA, LLC</dd>
+											<dt class="language">Language settings:</dt>
+											<dd class="language">
+												<div class="field select">
+													<select id="lang" name="lang">
+														<option value="en_GB" selected="selected">English</option>
+														<option value="sv_SE">Swedish</option>
+														<option value="ja_JP">Japanese</option>
+														<option value="it_IT">Italian</option>
+														<option value="de_DE">German</option>
+														<option value="da_DK">Danish</option>
+														<option value="fr_FR">French</option>
+														<option value="es">Spanish</option>
+														<option value="zh_CN">China</option>
+														<option value="nl_NL">Dutch</option>
+													</select>
+												</div>
+											<dd>
+										</dl>
+										
+										<div class="password_settings">
+											<h5>Password settings:</h5>
+											<p class="toggle_password">Change password</p>
+
+											<div class="password_fields">
+												<div class="field password optional">
+													<label for="pw_old">Old Password:</label>
+													<input id="pw_old" name="pw_old" type="password">
+													<p class="hint">Write your old password here</p>
+													<p class="error">You must fill out the old password when choosing a new</p>
+												</div>
+
+												<div class="field password optional">
+													<label for="pw_new1">New Password:</label>
+													<input id="pw_new1" type="password">
+													<p class="hint">A password must contain...</p>
+													<p class="error">You must fill out the new password field</p>
+												</div>
+
+												<div class="field password optional">
+													<label for="pw_new2">Confirm Password:</label>
+													<input id="pw_new2" type="password">
+													<p class="hint">A password must contain...</p>
+													<p class="error">The two passwords must match</p>
+												</div>
+											</div>
+											<div id="receipt" class="receipt"></div>
+										</div>
+
+										<ul class="actions">
+											<li class="save"><input name="save" class="button primary" value="Save Changes" type="button" /></li>
+										</ul>
+
+									</form>
+								</div>
+							</div>
+							
+							<div class="c133 support">
+								<h3>Support</h3>
+								<div class="c133 support_info">
+									<h4>Need help? We offer 24/7 assistance</h4>
+									<p>
+										Hotline: <a href="callto:+4545569098">+45 45 56 90 98</a><br />
+										E-mail: <a href="mailto:support@vestas.com">support@vestas.com</a>
+									</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<form action="/ajax/GetMessageList.json" method="get" id="msgTable" class="i:form type:auto i:MyAccountPerMessages">
+			<div class="box">
+				<div class="header">
+					<h2>Message inbox</h2>
+				</div>
+				<div class="body">
+					
+					<div class="message_list">
+						<input name="from" value="0" type="hidden" />
+						<input name="count" value="25" type="hidden" />
+						<input type="hidden" name="sort" value="" />
+						<input type="hidden" name="sort_column" value="" />
+
+						<table>
+							<tbody>
+								<tr class="header">
+									<th class="sortby sortby:read read"><span class="read">icon read</span></th>
+									<th class="sortby sortby:star star"><span class="star">icon star</span></th>
+									<th class="sender">Sender</th>
+									<th class="subject">Subject</th>
+									<th class="sortby sortby:date date desc">Date</th>
+								</tr>
+								<tr class="template id:{message_id} is_read_{message_read} is_starred_{message_star} is_high_{message_high_prio}">
+									<td class="read"><span class="read">{message_read}</span></td>
+									<td class="star"><span class="star">{message_star}</span></td>
+									<td class="sender"><a href="myacc-message.html?msgid=%7Bmessage_id%7D">{message_sender}</a></td>
+									<td class="subject"><a href="myacc-message.html?msgid=%7Bmessage_id%7D">{message_subject}</a></td>
+									<td class="date i:dateView">{message_date}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</div>
+			</div>
+		
+			<ul class="actions show_more">
+				<li class="more"><input name="more" class="button primary" value="Show More..." type="button"></li>
+			</ul>
+		</form>
+		
+	</div>
+
+</div>
+
+</body>
+</html>

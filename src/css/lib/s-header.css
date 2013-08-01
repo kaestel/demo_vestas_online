@@ -1,0 +1,59 @@
+#header {height: 50px; background: #37424a; position: fixed; left: 0; top: 0; width: 100%; min-width: 980px; text-align: center; z-index: 100;}
+
+#page.scrolled #header {
+	-moz-box-shadow: 0 2px 2px #666666;
+	box-shadow: 0 2px 2px #666666;
+}
+
+#header .c400 {text-align: left; display: block; position: relative; height: 50px; overflow: visible; margin: 0 40px; width: auto;}
+
+#header .info {display: inline-block;}
+
+#header .jumpboardlink {display: inline-block; background: url(/img/logo_vestas.png) no-repeat;}
+#header .jumpboardlink a {display: block; background: url(/img/bg_header_jumpboard.png) no-repeat 127px 16px; text-indent: -9999px; width: 150px; height: 50px;}
+#header .jumpboardlink a:hover {background-image: url(/img/bg_header_jumpboard_over.png);}
+
+
+#header .user {position: absolute; right: 125px; top: 0; padding: 16px 18px 0 0; background: transparent url(/img/bg_header_arrow_down.png) no-repeat right 24px; cursor: pointer; font-size: 0;}
+#header .user:hover, #header .user.open {background-image: url(/img/bg_header_arrow_down_over.png);}
+#header .user h3 {padding: 0 10px 0 0; display: inline-block; color: #adafaf; font-size: 14px; vertical-align: top;}
+#header .user:hover h3, #header .user.open h3 {color: #ffffff;}
+#header .user .notification, #header .user .notification span {color: #ffffff; font-size: 12px; font-weight: bold; line-height: 15px;}
+#header .user .notification {display: inline-block; background: #e37222; border-radius: 2px; padding: 2px 5px 2px; vertical-align: top;}
+
+#header .user .notification.disabled, #header .user .notification.disabled span {color: #37424a;}
+#header .user .notification.disabled {background: #5e6365;}
+
+
+#header .user .notification .template {display: none;}
+
+#header .user ul {display: none; position: absolute; top: 50px; right: -4px; background: white; padding: 9px 0 2px; max-width: 450px; min-width: 200px;
+	-moz-box-shadow: 0 1px 2px #666666;
+	box-shadow: 0 1px 2px #666666;
+}
+#header .user ul li {position: relative; padding: 0; white-space: nowrap;}
+#header .user ul li.signout {border-top: 1px solid #eaebeb; padding: 1px 0 0;}
+
+#header .user ul li h4 {padding: 4px 5px 3px;}
+#header .user ul li h4 a {color: #0091d7; padding: 7px 12px 6px; display: block; font-weight: normal;}
+#header .user ul li h4 a:hover {text-decoration: none; background: #ecf5fb;}
+#header .user ul li .notification {display: inline-block; background: #37424a; border-radius: 2px; padding: 3px 5px 2px 5px; color: #fff; font-size: 11px; font-weight: bold; line-height: 13px; margin-left: 20px;}
+
+
+#header #navigation {position: absolute; right: 2px; top: 0; padding: 16px 18px 0 0; background: transparent url(/img/bg_header_arrow_down.png) no-repeat right 24px; cursor: pointer;}
+#header #navigation:hover, #header #navigation.open {background-image: url(/img/bg_header_arrow_down_over.png);}
+#header #navigation h3 {color: #adafaf; font-size: 14px;}
+#header #navigation:hover h3, #header #navigation.open h3 {color: #ffffff;}
+
+#header #navigation ul {display: none; position: absolute; top: 50px; right: -6px; background: white; padding: 9px 0 2px; max-width: 450px; min-width: 200px;
+	-moz-box-shadow: 0 1px 2px #666666;
+	box-shadow: 0 1px 2px #666666;
+}
+
+#header #navigation ul li {position: relative; padding: 0; white-space: nowrap;}
+#header #navigation ul li.add {border-top: 1px solid #eaebeb; padding: 1px 0 0;}
+
+#header #navigation ul li h4 {padding: 4px 5px 3px;}
+#header #navigation ul li h4 a {color: #0091d7; padding: 7px 12px 6px; display: block; font-weight: normal;}
+#header #navigation ul li h4 a:hover {text-decoration: none; background: #ecf5fb;}
+#header #navigation ul li .notification {display: inline-block; background: #37424a; border-radius: 2px; padding: 3px 5px 2px 5px; color: #fff; font-size: 11px; font-weight: bold; line-height: 13px; margin-left: 20px;}

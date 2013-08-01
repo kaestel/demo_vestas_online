@@ -1,0 +1,81 @@
+/* Added by Gert, for um-agreements.html - please move me */
+
+#page .banner {width: 100%;}
+
+
+
+
+/*
+.hint {position: fixed; left: 50%; top: 38px; margin-left: -538px; z-index: 110; background: transparent url(/img/bg_hint_arrow_up.png) no-repeat center top; padding: 4px 0 0;}
+	
+.hint span{background: black; padding: 5px 10px; color: white; border-radius: 3px; font-size: 12px; font-weight: bold; display: block;
+	-moz-box-shadow: 0 2px 2px #666666;
+	box-shadow: 0 2px 4px #666666;
+}
+*/
+
+.overlay {width: 100%; height: 100%; background: transparent url(/img/bg_overlay.png) repeat top center; z-index: 20; position: absolute; left: 0; top: 0; display: none;}
+.overlay .box {width: 600px; left: 50%; margin-left: -300px; background: white; top: 300px; position: absolute;}
+
+
+.overlay .header {height: 46px; background-color: #d5d6d2; position: relative; margin-bottom: 20px;}
+.overlay .header h2 {font-size: 16px; padding: 13px 0 0 20px;}
+.overlay .header ul {position: absolute; top: 13px; right: 2px; overflow: hidden;}
+.overlay .header ul li {float: left;}
+.overlay .header .actions .close {text-indent: -9999px; width: 19px; height: 19px; padding: 0 0 0 13px; background: transparent url(/img/bg_closebutton.png) no-repeat top center;}
+.overlay .body {padding-right: 100px;}
+.overlay .body p,
+.overlay .body h3,
+.overlay .body ul {padding: 0 0 20px 20px;}
+.overlay .body h3 {padding-bottom: 0px;}
+.overlay .body ul.actions li {display: inline-block;}
+
+
+.overlay.browsersuggestions {display: none;}
+
+
+/* Docs */
+/*#content.docs .box .body {padding-bottom: 15px;}*/
+
+#content.docs .box .body ul.index {}
+#content.docs .box .body ul.index li {}
+
+#content.docs .box .body ul.index li a {font-size: 16px; color: #0091D7;}
+#content.docs .box .body ul.index li.sub a {font-size: 14px; padding-left: 20px;}
+
+#content.docs .box .body code {display: block; padding: 0 20px; margin: 0 0 20px 0; white-space: pre; font-family: monaco, courier, sans-serif; font-size: 12px; background: #f7f7f5;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+}
+#content.docs .box .body .image {padding: 0; overflow: hidden}
+#content.docs .box .body .image img {float: left; padding: 0 0 0 20px;}
+
+#content.docs .box .body .function {}
+#content.docs .box .body .function .header {background: none; height: auto; border-top: 1px solid #eaebeb; padding-top: 20px;}
+#content.docs .box .body .function .header h4 {font-weight: bold;}
+#content.docs .box .body .function .body h4 {padding-bottom: 6px; margin-top: 12px;}
+#content.docs .box .body .function dl {margin: 0 0 12px 20px;}
+#content.docs .box .body .function dl dt:after {content: ":";}
+#content.docs .box .body .function dl.definition dd,
+#content.docs .box .body .function dl.parameters dd {display: inline-block; padding: 2px 5px; margin-bottom: 8px; font-family: monaco, courier, sans-serif; font-size: 12px; background: #f7f7f5;}
+#content.docs .box .body .function dl div {margin: 0; padding: 0; font-family: monaco, courier, sans-serif; font-size: 12px;}
+
+
+.todo,
+.todo * {color: red !important;}
+
+
+/* LESS MARGIN/PADDING LEFT AND RIGHT ON 1024 screens */
+
+@media screen and (max-width: 1060px) {
+
+	#page #header .c400 {margin: 0 10px;}
+	#page #content {margin: 0 10px;}
+	#page #subnavigation ul {margin: 0 10px;}
+	#page .logonsplash {margin: 0 10px 20px 10px;}
+
+	#feedback {margin: 0 10px;}
+	#footer {padding: 0 10px;}
+
+}

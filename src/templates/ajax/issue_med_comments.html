@@ -1,0 +1,140 @@
+<div id="content" class="IssueManagerView i:IssueManagerView">
+
+	<div class="box">
+		<div class="header">
+			<ul class="actions">
+				<li class="back"><a href="/irj/portal/issuemanager">Back</a></li>
+			</ul>
+		</div>
+		<div class="body">
+
+			<div class="c">
+
+				<div class="c266">
+					<div class="view">
+
+				
+						<h3>test initiator uujhj hjh bla XZY</h3>
+				
+						<div class="issue">
+							<h4>Issue description</h4>
+						
+							<h5>View initial description</h5>
+							<div class="initdescription">
+								<p> sdf adfasdfa sdfasd fasdf asdf</p>
+							</div>
+
+							<div class="description">
+								<p> asdfasdf asfasdfasd fasdf asdfa sdfa fasdf asdf deployed</p>
+							</div>
+						</div>
+
+				
+						<div class="solution">
+							<h4>Proposed solution</h4>
+							<div class="notification">Updated!</div>
+							<div class="description">
+								<p> sdf asdfasdf asfasdfasdfa sdf asdf</p>
+							</div>
+						</div>
+				
+				
+						<div class="attachments">
+							<h5>Attachments</h5>
+							<ul class="list">
+								<li class="pdf"><a href="/im_be/ReadAttachment?issueID=8000000005&attachmentID=E18E11BF64D823F1A316005056B57CB9&mime=application/pdf" target="_blank">IM Portal ygArchitecture</a></li>					
+								<li class="doc"><a href="/im_be/ReadAttachment?iss n  n n mn n ueID=8000000005&attachmentID=E18E11BF64D823F1A316005056B57CB9&mime=application/pdf" target="_blank">IM Portal ygArchitecture</a></li>					
+							</ul>
+						</div>
+					
+						<div class="dialogue">
+							<h3>Issue dialog</h3>
+
+							<div class="comments">
+								<form action="/templates/ajax/ReadIssue.json" method="get" id="commentsform" class="i:IssueManagerComments">
+									<input type="hidden" name="issueid" value="8000000005" />
+									<input type="hidden" name="getall" value="false" />
+
+									<ul class="actions">
+										<li class="more"><input type="button" class="button" name="more" value="0 comments" /></li>
+									</ul>
+
+									<div class="slide">
+										<ul class="list">
+											<li class="template">
+												<div class="image"><img src="/util/MDGetVCardPictureHelper?initials={sender_initials}" alt="{sender_name}" /></div>
+												<div class="published">{comment_date}</div>
+												<div class="author">{sender_name}</div>
+												<div class="comment">
+													{message}
+												</div>
+											</li>
+										</ul>
+									</div>
+								</form>
+							</div>
+
+
+							<div class="addcomment">
+								<div class="image"><img src="/util/MDGetVCardPictureHelper?initials=mhn@invokers.com" alt="person name" /></div>
+								<form action="/templates/ajax/PostComment.json" method="post" id="postcommentform" class="i:IssueManagerAddComment">
+									<input type="hidden" name="issueid" value="8000000005" />
+									<input type="hidden" name="sender_name" value="Martin" />
+									<input type="hidden" name="sender_initials" value="MKN" />
+						 
+									<div class="field text required">
+										<label for="comment">Add comment to issue dialog</label>
+										<textarea id="comment" name="comment" rows="3" cols="30"></textarea>
+									</div>
+									<ul class="actions">
+										<li class="submit"><input type="submit" name="submit" class="button primary" value="Post comment" /></li>
+									</ul>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="c133">
+					<div class="details">
+						<h3>Issue Details</h3>
+						<dl class="list">
+							<dt>Issue ID</dt>
+							<dd>8000000005</dd>
+			
+							<dt>Raised by</dt>
+							<dd>Mr. Georg A. Lidovois</dd>
+			
+							<dt>Last updated</dt>
+							<dd>24.04.2012</dd>
+			
+							<dt>Status</dt>
+							<dd> In progress </dd>
+			
+							<dt>Planned Delivery</dt>
+							<dd>20.01.2011</dd>
+						</dl>
+
+				
+						<h3>Who is resolving your issue?</h3>
+						<form id="vcardform" action="/templates/ajax/MDGetVCardInformation.json" action="get" class="i:form type:auto">
+							<input type="hidden" name="initials" value="MAFLA" />
+							<div class="vcards">
+								<div class="template vcard person" itemscope itemtype="http://data-vocabulary.org/Person">
+									<div class="image"><img src="/util/MDGetVCardPictureHelper?initials={initials}" width="60px" alt="{firstname} {lastname}" class="photo" itemprop="image" /></div>
+									<div class="name fn" itemprop="name">{firstname} {lastname}</div>
+									<div class="role" itemprop="role">{org}</div>
+									<div class="org" itemprop="affiliation">Vestas</div>
+									<div class="tel" itemprop="tel">Phone: <a href="callto:{phone}">{phone}</a></div>
+									<div class="email" itemprop="email">E-mail: <a href="mailto:{email}">{email}</a></div>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div> 

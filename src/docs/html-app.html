@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- (c) & (p) hvadhedderde.com 2011 //-->
+	<!-- All material protected by copyrightlaws, as if you didnt know //-->
+	<title>Vestas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_desktop_include.css" />
+	<script type="text/javascript" src="/js/lib/seg_desktop_include.js"></script>
+</head>
+<body>
+
+<div id="page" class="i:page">
+
+	<div id="header">
+		<div class="c400">
+
+			<div class="info">
+				<div class="jumpboardlink"><a href="/docs/index.html" title="Back to documentation">Documentation</a></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="banner"></div>
+
+	<div id="subnavigation">
+		<ul>
+			<li><h4><a href="index.html">Docs home</a></h4></li>
+			<li class="selected"><h4><a href="html-intro.html">HTML</a></h4></li>
+			<li><h4><a href="js-intro.html">JavaScript</a></h4></li>
+		</ul>
+	</div>
+
+	<div id="content" class="docs">
+
+		<div class="box">
+			<div class="header">
+				<h2>Applications</h2>
+			</div>
+
+			<div class="body">
+
+				<h3>Applications</h3>
+				
+				<p>
+					An application is the view from an Application that is shown on the Add Application page.
+					Applications have two states: Installed and ready to install and the HTML differs a bit
+					between the two states.
+				</p>
+				
+				<p>
+					The overall structure for showing a list of apps is:
+				</p>
+				<code>
+&lt;ul class=&quot;apps&quot;&gt;
+	&lt;li class=&quot;app&quot;&gt;...&lt;/li&gt;
+	&lt;li class=&quot;app&quot;&gt;...&lt;/li&gt;
+	&lt;li class=&quot;app&quot;&gt;...&lt;/li&gt;
+	&lt;li class=&quot;app&quot;&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+				</code>
+				
+				<p>
+					The HTML for an installed app is:
+				</p>
+				<code>
+&lt;li class=&quot;app&quot;&gt;
+	&lt;img src=&quot;/img/bg_app_logo.png&quot; alt=&quot;Issue Manager&quot; /&gt;
+	&lt;h3&gt;Issue Manager&lt;/h3&gt;
+	&lt;p&gt;Nunc feugiat, lorem vitae placerat auctor, nibh elit dignissim orci.&lt;/p&gt;
+	&lt;ul class=&quot;actions&quot;&gt;
+		&lt;li class=&quot;info&quot;&gt;&lt;a href=&quot;/templates/add_application_view.html&quot; class=&quot;button&quot;&gt;Get info&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;add&quot;&gt;&lt;a class=&quot;button disabled&quot;&gt;Installed&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/li&gt;
+				</code>
+				
+				<p>
+					The HTML for an app that is ready to install is:
+				</p>
+				<code>
+&lt;li class=&quot;app&quot;&gt;
+	&lt;img src=&quot;/img/bg_app_logo.png&quot; alt=&quot;Document Sharing&quot;/&gt;
+	&lt;h3&gt;Document Sharing&lt;/h3&gt;
+	&lt;p&gt;Nunc feugiat, lorem vitae placerat auctor, nibh elit dignissim orci.&lt;/p&gt;
+	&lt;ul class=&quot;actions&quot;&gt;
+		&lt;li class=&quot;info&quot;&gt;&lt;a href=&quot;/templates/add_application_view.html&quot; class=&quot;button&quot;&gt;Get info&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;add&quot;&gt;
+			&lt;form action=&quot;/util/MDAppAdd&quot; method=&quot;post&quot; name=&quot;add_DocumentSharing&quot;&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;appid&quot; value=&quot;DocumentSharing&quot; /&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;appurl&quot; value=&quot;http://vestas.local/testapp&quot; /&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;appname&quot; value=&quot;My new app&quot; /&gt;
+				&lt;input type=&quot;submit&quot; value=&quot;Add App&quot; class=&quot;button primary&quot; /&gt;
+			&lt;/form&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/li&gt;
+				</code>
+				<p>
+					The "appname" and "appurl" form values are used to inject a new item in
+					the main navigation after adding an application and "appid" is used to identify
+					the application
+				</p>
+				
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<div class="tagline">Wind. It means the world to us.&trade;</div>
+	</div>
+
+</div>
+
+</body>
+</html>

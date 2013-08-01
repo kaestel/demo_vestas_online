@@ -1,0 +1,11 @@
+#content.add_apps ul.apps {font-size: 0; margin-bottom: -1px; overflow: hidden;}
+
+#content.add_apps li.app {width: 50%; height: 200px; border-bottom: 1px solid #e9eaeb; float: left; overflow: hidden;}
+#content.add_apps li.app .app_inner {padding: 0 0 23px 0; height: 100%; border-right: 1px solid #e9eaeb; overflow: hidden;}
+                  
+#content.add_apps li.app img {position: relative; top: 48px; left: 29px; float: left;}
+#content.add_apps li.app h3 {padding: 0; margin-left: 135px; margin-right: 30px; margin-bottom: 4px;}
+#content.add_apps li.app p {padding: 0; margin-left: 135px; margin-right: 30px; max-height: 68px; overflow: hidden;}
+#content.add_apps .apps li.app ul.actions {padding: 4px 0 10px 135px;}
+
+#content.add_apps .apps .notification {display: none;}

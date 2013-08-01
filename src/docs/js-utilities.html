@@ -1,0 +1,2066 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- (c) & (p) hvadhedderde.com 2011 //-->
+	<!-- All material protected by copyrightlaws, as if you didnt know //-->
+	<title>Vestas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_desktop_include.css" />
+	<script type="text/javascript" src="/js/lib/seg_desktop_include.js"></script>
+</head>
+<body>
+
+<div id="page" class="i:page">
+
+	<div id="header">
+		<div class="c400">
+
+			<div class="info">
+				<div class="jumpboardlink"><a href="/docs/index.html" title="Back to documentation">Documentation</a></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="banner"></div>
+
+	<div id="subnavigation">
+		<ul>
+			<li><h4><a href="index.html">Docs home</a></h4></li>
+			<li><h4><a href="html-intro.html">HTML</a></h4></li>
+			<li class="selected"><h4><a href="js-intro.html">JavaScript</a></h4></li>
+		</ul>
+	</div>
+
+	<div id="content" class="docs">
+
+		<div class="box">
+			<div class="header">
+				<h2>JavaScript utilities</h2>
+			</div>
+
+			<div class="body">
+
+				<h3>JES Util</h3>
+				<p><em>Util</em> or short <em>u</em> is the overall JES framework namespace.</p>
+
+				<!-- DOM -->
+
+				<div class="function">
+					<div class="header">
+						<h4>Util.getElement</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.getElement</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.ge</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.getElement(<span class="type">String</span> <span class="var">id</span> [, <span class="type">Mixed</span> <span class="var">target</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Get element (id/class/tag)<br/>
+								Returns elementById if possible<br/>
+								else Returns first element with (partial) matching classname from target<br/>
+								If no matches, return first element with tagname from target<br/>
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">identifier</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id, node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">target</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Node</span> Optional, any given node could be used as scope
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>Returns elementById if possible<br/>
+							else Returns first element with (partial) matching classname from target</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.getElement("content");
+								</code>
+								<p>returns <span class="type">Node</span> with id/classname content</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.getElements</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.getElements</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.ges</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.getElement(<span class="type">String</span> <span class="var">identifier</span>[, <span class="type">Mixed</span> <span class="var">target</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Get elements (class/tag)<br/>
+								Returns all elements with (partial) matching classname from target<br/>
+								If no matches, return elements with tagname from target<br/>
+							</p>
+						</div>
+
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">identifier</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id, node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">target</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Node</span> Optional, any given node could be used as scope
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>
+								Returns all elements with (partial) matching classname from target<br/>
+								If no matches, return elements with tagname from target
+							</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.getElements("content");
+								</code>
+								<p>returns <span class="type">Node(s)</span> with id/classname(s) content</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.querySelector</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.querySelector</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.qs</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.querySelector(<span class="type">String</span> <span class="var">query</span> [, <span class="type">Mixed</span> <span class="var">target</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Returns the first element within the document (using depth-first pre-order traversal of the document's nodes) that matches the specified group of selectors.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">query</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">target</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Node</span> Optional, any given node could be used as scope
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>Returns elementById if possible<br/>
+							else Returns first element with (partial) matching classname from target</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.querySelector("#content");
+								</code>
+								<p>returns <span class="type">Node</span> with id content</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.querySelectorAll</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.querySelectorAll</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.qsa</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.querySelectorAll(<span class="type">String</span> <span class="var">query</span> [, <span class="type">Mixed</span> <span class="var">target</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Returns a list of the elements within the document (using depth-first pre-order traversal of the document's nodes) that match the specified group of selectors. The object returned is a NodeList.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">query</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">target</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Node</span> Optional, any given node could be used as scope
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>Returns a list of the elements within the document that match the specified group of selectors.</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.querySelectorAll("#content .domtest");
+								</code>
+								<p>returns <span class="type">Node(s)</span> with classnames domtest</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.getSibling</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.getSibling</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.gs</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.getSibling(<span class="type">String</span> <span class="var">e</span>[, <span class="type">Mixed</span> <span class="var">direction</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								get sibling (get next/prev parentnode childnode of same type)
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">e</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Node</span> 
+									</div>
+								</dd>
+
+								<dt><span class="var">direction</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> "prev" or "next" sibling
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>The previous sibling of the same type of the chosen node. By choosing "next" you can get the next sibling</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.getSibling(u.qs("#content"), "next");
+								</code>
+								<p>returns the next element of the same type as #content</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.previousSibling</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.previousSibling</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.ps</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.previousSibling(<span class="type">String</span> <span class="var">e</span> [, <span class="type">String</span> <span class="var">exclude</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Returns previous sibling, not counting text nodes as siblings and ignoring optional exclude=className/nodeName
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">e</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">exclude</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> Optional, node id node classname or node tagname
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>Returns previous sibling</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+<code>						
+u.previousSibling(u.qs(".footer"));
+
+&lt;div class=&quot;scene&quot;&gt;
+	&lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>							
+
+								<p>returns <span class="type">Node</span> with classname header</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.nextSibling</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.nextSibling</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.ns</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.nextSibling(<span class="type">String</span> <span class="var">e</span> [, <span class="type">String</span> <span class="var">exclude</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Returns next sibling, not counting text nodes as siblings and ignoring optional exclude=className/nodeName
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">e</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">exclude</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> Optional, node id node classname or node tagname
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>Returns next sibling</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+<code>								
+u.nextSibling(u.qs(".header"));
+
+&lt;div class=&quot;scene&quot;&gt;
+	&lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+
+								<p>returns <span class="type">Node(s)</span> with classname footer</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.appendElement</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.appendElement</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.ae</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.appendElement(<span class="type">String</span> <span class="var">e</span>, <span class="type">String</span> <span class="var">note_type</span> [, <span class="type">String</span> <span class="var">attribute</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Appends child to element e
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">e</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">node_type</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> type of node you want to add
+									</div>
+								</dd>
+
+								<dt><span class="var">attribute</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> Optional, JSON object which adds attributes on a node like target to an a node.
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>Returns the added node</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+<code>								
+u.appendElement(u.qs(".header"), "div", ({"class":"addedElement"}));
+
+&lt;div class=&quot;scene&quot;&gt;
+	&lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+
+								<p>returns <span class="type">Node</span> type div with the className: addedElement inserted into the header div</p>
+							</div>
+						</div>
+
+					</div>
+				</div>		
+				<div class="function">
+					<div class="header">
+						<h4>Util.insertElement</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.insertElement</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.ie</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.insertElement(<span class="type">String</span> <span class="var">e</span>, <span class="type">String</span> <span class="var">note_type</span> [, <span class="type">String</span> <span class="var">attribute</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Inserts element to element e and put it in first
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">e</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">node_type</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> type of node you want to add
+									</div>
+								</dd>
+
+								<dt><span class="var">attribute</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> Optional, an attribute on a node like target to an a node
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>Returns the inserted node</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+<code>								
+u.insertElement(u.qs(".scene"), "div", ({"class":"insertedElement"}));
+
+&lt;div class=&quot;scene&quot;&gt;
+	&lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>							
+
+								<p>returns <span class="type">Node</span> type div with the className: insertedElement inserted into the scene div before the header div</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.getIJ</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.getIJ</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.sc</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.getIJ(<span class="type">String</span> <span class="var">e</span>, <span class="type">String</span> <span class="var">id</span>)</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Gets a parameter from a class
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">e</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node
+									</div>
+								</dd>
+
+								<dt><span class="var">id</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> the parameter identifier that gives the parameter value
+									</div>
+								</dd>
+
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>The parameter on a class</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+
+<code>						
+u.getIJ(u.qs("#top"), "header");
+
+&lt;div class=&quot;scene&quot;&gt;
+	&lt;div id=&quot;top&quot; class=&quot;header:show&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+
+								<p>Will return "show" which is the parameter on the class: header</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.setClass</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.setClass</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.sc</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.setClass(<span class="type">String</span> <span class="var">e</span>, <span class="type">String</span> <span class="var">classname</span>)</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Clears all classnames from an element and sets a new one
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">e</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">classname</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> the new classname for the element
+									</div>
+								</dd>
+
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p></p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+
+<code>						
+u.setClass(u.qs(".footer"), "bottom");
+
+&lt;div class=&quot;scene&quot;&gt;
+	&lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+
+								<p>Will change the footer div classname from footer to bottom</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.addClass</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.addClass</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.ac</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.addClass(<span class="type">String</span> <span class="var">e</span>, <span class="type">String</span> <span class="var">classname</span>)</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Checks if the classname is on an element. If not will add it.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">e</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">classname</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> the new classname for the element to be added
+									</div>
+								</dd>
+
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p></p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+
+<code>
+u.addClass(u.qs(".footer"), "bottom");
+
+&lt;div class=&quot;scene&quot;&gt;
+	&lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+
+								<p>Will add classname bottom to the already div with classname footer</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.removeClass</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.removeClass</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.rc</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.removeClass(<span class="type">String</span> <span class="var">e</span>, <span class="type">String</span> <span class="var">classname</span>)</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Will remove all instances of the classname on the element
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">e</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">classname</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> the classname to be removed from the element
+									</div>
+								</dd>
+
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p></p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+<code>						
+u.removeClass(u.qs(".footer"), "bottom");
+
+&lt;div class=&quot;scene&quot;&gt;
+	&lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;footer bottom&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+
+								<p>Will remove classname bottom the "footer bottom" div</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.toggleClass</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.toggleClass</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.tc</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.removeClass(<span class="type">String</span> <span class="var">e</span>, <span class="type">String</span> <span class="var">classname</span>[, <span class="type">String</span> <span class="var">second_classname</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Will toggle classname on an element. If it's there already it will be removed. If it's not the it will be added. If second_classname is given the function will toggle the two classnames.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">e</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">classname</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> the classname to be added or removed from the element
+									</div>
+								</dd>
+
+								<dt><span class="var">second_classname</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> the classname to toogle with the first classname
+									</div>
+								</dd>
+
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p></p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+
+<code>						
+u.toggleClass(u.qs(".footer"), "bottom");
+
+&lt;div class=&quot;scene&quot;&gt;
+	&lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;footer bottom&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>					
+
+								<p>Will remove classname bottom the "footer bottom" div. If run again it will add it again</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.hasClass</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.hasClass</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.hc</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.hasClass(<span class="type">String</span> <span class="var">e</span>, <span class="type">String</span> <span class="var">classname</span>)</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Checks if an element has a classname
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">e</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">classname</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> the classname that will be checked for
+									</div>
+								</dd>
+
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>
+								True or false if the element has the classname or not
+							</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+<code>						
+u.hc(u.qs(".footer"), "footer");
+
+&lt;div class=&quot;scene&quot;&gt;
+	&lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+
+								<p>Will return true since the div footer has the classname footer</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.applyStyle</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.applyStyle</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.as</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.applyStyle(<span class="type">String</span> <span class="var">e</span>, <span class="type">String</span> <span class="var">style</span>, <span class="type">String</span> <span class="var">value</span>)</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Adds a style to an element
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">e</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">style</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> the type of style to apply
+									</div>
+								</dd>
+
+								<dt><span class="var">value</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> the value to the applied style
+									</div>
+								</dd>
+
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>
+
+							</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.as(u.qs(".footer"), "height", "20px");
+
+&lt;div class=&quot;scene&quot;&gt;
+	&lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+								</code>
+
+								<p>Will add a height of 20px to the footer div</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.getComputedStyle</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.getComputedStyle</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.gcs</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.getComputedStyle(<span class="type">String</span> <span class="var">e</span>, <span class="type">String</span> <span class="var">style</span>, <span class="type">String</span> <span class="var">attribute</span>)</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Get elements computed style value for css attribute
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">e</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node id node classname or node tagname
+									</div>
+								</dd>
+
+								<dt><span class="var">attribute</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> the attribute you want the computed style on
+									</div>
+								</dd>
+
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>
+
+							</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+
+<code>						
+u.gcs(u.qs(".footer"), "height");
+
+&lt;div class=&quot;scene&quot;&gt;
+	&lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+
+								<p>Will return whatever the computed height of footer is</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="function">
+					<div class="header">
+						<h4>Util.wrapElement</h4>
+					</div>
+
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.wrapElement</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.we</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.wrapElement(<span class="type">String</span> <span class="var">e</span>, <span class="type">String</span> <span class="var">wrap</span> [, <span class="type">String</span> <span class="var">attribute</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Put an element around another element
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">e</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> node
+									</div>
+								</dd>
+
+								<dt><span class="var">wrap</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> element that wraps the e
+									</div>
+								</dd>
+
+								<dt><span class="var">attribute</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> Optional, JSON object which adds attributes on a node like target to an a node.
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>
+								The wrapping object
+							</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+<code>					
+u.wrapElement(u.qs(".footer"), "div");
+
+&lt;div class=&quot;scene&quot;&gt;
+	&lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+
+								<p>Will put a div around the footer div</p>
+							</div>
+						</div>
+
+					</div>
+				</div>	
+
+
+				<!-- STRING -->
+
+				<div class="function">
+					<div class="header">
+						<h4>Util.cutString</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.cutString</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">none</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.cutString(<span class="type">String</span> <span class="var">string</span><span class="type">Number</span> <span class="var">length</span>)</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Will cut a given string to the number of letters wanted. Will end the string with "...".
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">identifier</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> string to cut
+									</div>
+								</dd>
+				
+								<dt><span class="var">target</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Length</span> The length of the string you want returned.
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>Returns the cutted string. </p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+var cutStringText = "This function will cut the string to the number of letter you'd like";
+u.cutString(cutStringText, 10)
+								</code>
+		
+								<p>returns <span class="type">String</span> with text: "This fu..."</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="function">
+					<div class="header">
+						<h4>Util.random</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.random</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">none</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.random(<span class="type">Number</span> <span class="var">min</span><span class="type">Number</span> <span class="var">max</span>)</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Will return a random number in the a given range
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">min</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Number</span> The min number that could be returned
+									</div>
+								</dd>
+				
+								<dt><span class="var">max</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Number</span> The max number that could be returned
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>A random number from the given range</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.random(1,10)
+								</code>
+
+								<p>returns <span class="type">Number</span> between 1 and 10. Both included</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="function">
+					<div class="header">
+						<h4>Util.randomKey</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.randomKey</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">none</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.randomKey([<span class="type">String</span> <span class="var">length</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Will return a random key consisting of letters and/or numbers. If no length is chosen, 8 is the default length.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">length</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> Optional. The length of the random key
+									</div>
+								</dd>
+				
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>A random key consisting of letters and/or numbers</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.randomKey(10)
+								</code>
+
+								<p>returns <span class="type">String</span> cc65epfpsq</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="function">
+					<div class="header">
+						<h4>Util.randomString</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.randomString</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">none</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.randomString([<span class="type">String</span> <span class="var">length</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Will return a random key consisting of letters. If no length is chosen, 8 is the default length.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">length</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> Optional. The length of the random string
+									</div>
+								</dd>
+				
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>A random string consisting of letters</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.randomString(10)
+								</code>
+
+								<p>returns <span class="type">String</span> mFrHGruzzo</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- SYSTEM -->
+
+
+				<div class="function">
+					<div class="header">
+						<h4>Util.explorer</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.explorer</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">none</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.explorer([<span class="type">Number</span> <span class="var">version</span><span class="type">String</span> <span class="var">scope</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Checks if IE browser is used. Can check for version also.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">version</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Number</span>Optional. The number of version you're looking for
+									</div>
+								</dd>
+				
+								<dt><span class="var">scope</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span>Optional. Bigger or less option
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>False if not IE. If IE it will return the version number</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.explorer(8, ">")
+								</code>
+
+								<p>returns <span class="type">String</span> 9.0 if you're in a IE 9</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="function">
+					<div class="header">
+						<h4>Util.safari</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.safari</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">none</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.safari([<span class="type">Number</span> <span class="var">version</span><span class="type">String</span> <span class="var">scope</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Checks if Safari browser is used. Can check for version also.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">version</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Number</span>Optional. The number of version you're looking for
+									</div>
+								</dd>
+				
+								<dt><span class="var">scope</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span>Optional. Bigger or less option
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>False if not Safari. If Safari it will return the version number</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.safari(5, ">")
+								</code>
+
+								<p>returns <span class="type">String</span> 5.0 if you're in a Safari 5</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="function">
+					<div class="header">
+						<h4>Util.webkit</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.explorer</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">none</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.explorer([<span class="type">Number</span> <span class="var">version</span><span class="type">String</span> <span class="var">scope</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Checks if IE browser is used. Can check for version also.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">version</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Number</span>Optional. The number of version you're looking for
+									</div>
+								</dd>
+				
+								<dt><span class="var">scope</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span>Optional. Bigger or less option
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>False if not IE. If IE it will return the version number</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.explorer(8, ">")
+								</code>
+
+								<p>returns <span class="type">String</span> 9.0 if you're in a IE 9</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+				<div class="function">
+					<div class="header">
+						<h4>Util.firefox</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.firefox</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">none</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.firefox([<span class="type">Number</span> <span class="var">version</span><span class="type">String</span> <span class="var">scope</span>])</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Checks if Firefox browser is used. Can check for version also.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								<dt><span class="var">version</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Number</span>Optional. The number of version you're looking for
+									</div>
+								</dd>
+				
+								<dt><span class="var">scope</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span>Optional. Bigger or less option
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>False if not Firefox. If Firefox it will return the version number</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.firefox(8, ">")
+								</code>
+
+								<p>returns <span class="type">String</span> 11.0 if you're in a Firefox 11</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+				<div class="function">
+					<div class="header">
+						<h4>Util.opera</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.opera</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">none</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.opera()</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Checks if Opera browser is used.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								None
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>False if not Opera. True if Opera</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.opera()
+								</code>
+
+								<p>returns <span class="type">String</span> True if you're in an Opera browser</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="function">
+					<div class="header">
+						<h4>Util.windows</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.windows</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">none</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.windows()</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Checks if running on Windows 
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								None
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>False if not running on Windows. True if running on Windows</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.windows()
+								</code>
+
+								<p>returns <span class="type">String</span> True if you're using Windows</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+				
+				<div class="function">
+					<div class="header">
+						<h4>Util.osx</h4>
+					</div>
+					
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.osx</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">none</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax">Util.osx()</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>
+								Checks if running OS X
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>parameters</h4>
+							<dl class="parameters">
+								None
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p>False if not running OS X. True if running OS X</p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+u.osx()
+								</code>
+
+								<p>returns <span class="type">String</span> True if you're running OS X</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- EVENTS -->
+
+
+				<div class="function">
+					<div class="header">
+						<h4>Util.Events.click</h4>
+					</div>
+					<div class="body">
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.Events.click</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.e.click</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax"><span class="type">Void</span> = Util.Events.click(<span class="type">Node</span> <span class="var">node</span>);</dd>
+						</dl>
+
+						<div class="description">
+							<h4>Description</h4>
+							<p>Attach an click event using either mouse- or touchevents depending on device support.</p>
+							<p>Invokes callback to node.clicked when click event occurs.</p>
+						</div>
+
+						<div class="parameters">
+							<h4>Parameters</h4>
+
+							<dl class="parameters">
+								<dt><span class="var">_var_</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Node</span> node to attach click event to.
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p><span class="type">Void</span></p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+								<code>
+
+u.e.click(node);
+
+node.clicked = function(event) {
+	// do what you want
+}
+								</code>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- REQUEST -->
+
+				<div class="function">
+					<div class="header">
+						<h4>Util.Request</h4>
+					</div>
+					<div class="body">
+
+						<dl class="definition">
+							<dt class="name">Name</dt>
+							<dd class="name">Util.Request</dd>
+							<dt class="shorthand">Shorthand</dt>
+							<dd class="shorthand">u.Request</dd>
+							<dt class="syntax">Syntax</dt>
+							<dd class="syntax"><span class="type">Void</span> = u.Request(
+								<span class="type">Node</span> <span class="var">node</span>
+								<span class="type">String</span> <span class="var">url</span>
+								[, <span class="type">string</span> <span class="var">parameters</span> ]
+								[, <span class="type">String</span> <span class="var">method</span> ]
+								[, <span class="type">String</span> <span class="var">async</span> ]
+							);
+							</dd>
+						</dl>
+						<div class="description">
+							<h4>Description</h4>
+							<p>Make a server request using XMLHttpRequest or &lt;script&gt; injection in &lt;head&gt;.</p>
+							<p>
+								Makes callback to node.Response(response) when response is received. Declare this function
+								on node to receive callback.
+							</p>
+						</div>
+
+						<div class="parameters">
+							<h4>Parameters</h4>
+
+							<dl class="parameters">
+								<dt><span class="var">node</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Node</span> node to attach request to. Response callback will be made to this node.
+									</div>
+								</dd>
+								<dt><span class="var">url</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> url to make request to.
+									</div>
+								</dd>
+								<dt><span class="var">parameters</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> Optional - parameter string like var=test&var2=hest.
+									</div>
+								</dd>
+								<dt><span class="var">method</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">String</span> Optional - Request method
+									</div>
+									<div class="details">
+										<h5>Options</h5>
+										<dl class="options">
+											<dt><span class="value">POST</span></dt>
+											<dd>POST parameters</dd>
+											<dt><span class="value">GET</span></dt>
+											<dd>Append parameters to url - DEFAULT</dd>
+											<dt><span class="value">SCRIPT</span></dt>
+											<dd>Script injection in header (JSONP)</dd>
+										</dl>
+									</div>
+								</dd>
+								<dt><span class="var">async</span></dt>
+								<dd>
+									<div class="summary">
+										<span class="type">Boolean</span> Optional - set to true for asynchronous request.
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="return">
+							<h4>Returns</h4>
+							<p><span class="type">Void</span></p>
+						</div>
+
+						<div class="examples">
+							<h4>Examples</h4>
+
+							<div class="example">
+<code>
+var node = u.qs("#content");
+node.Response = function(response) {
+	var name = response.name;
+}
+u.Request(node, "/json");
+</code>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<div class="tagline">Wind. It means the world to us.&trade;</div>
+	</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- (c) & (p) hvadhedderde.com 2011 //-->
+	<!-- All material protected by copyrightlaws, as if you didnt know //-->
+	<title>Vestas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_desktop_include.css" />
+	<script type="text/javascript" src="/js/lib/seg_desktop_include.js"></script>
+</head>
+<body>
+
+<div id="page" class="i:page">
+
+	<div id="header">
+		<div class="c400">
+
+			<div class="info">
+				<div class="jumpboardlink"><a href="/templates/jumpboard.html" title="Jump Board">Jump Board</a></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="banner"></div>
+
+	<div id="subnavigation">
+		<ul>
+			<li class="selected"><h4><a href="/templates/um-agreements.html">Agreements</a></h4></li>
+			<li><h4><a href="/templates/um-agreement-users.html">Users</a></h4></li>
+		</ul>
+		<ul class="actions">
+			<li class="i:feedback"><a href="/templates/ajax/feedback.html" class="button tool feedback">Feedback</a></li>
+			<li class="i:sharepage"><a href="/templates/ajax/sharepage.html" class="button tool share">Share</a></li>
+		</ul>
+	</div>
+
+	<div id="content" class="UserManagement newagreement">
+
+		<div class="box">
+			<div class="header">
+				<ul class="actions">
+					<li class="back"><a href="/templates/um-agreements.html">Back</a></li>
+				</ul>
+			</div>
+			<div class="body">
+				<h3>New agreement: Choose account</h3>
+				<p>Search the list below for a specific account.</p>
+			</div>
+
+			<form action="/templates/ajax/MDSearchAccounts.json" method="get" class="i:form type:manual">
+				<div class="search">
+
+					<div class="filters">
+						<fieldset>
+							<div class="field string query">
+								<label for="input_query">Search ID</label>
+								<input type="text" name="query" id="input_query" value="" />
+								<p class="hint">Search</p>
+								<p class="error">fejl 40</p>
+							</div>
+						</fieldset>
+						<ul class="actions">
+							<li class="reset"><input type="reset" class="button reset" value="Reset" /></li>
+							<li class="submit"><input type="submit" class="button search" value="Search" /></li>
+						</ul>
+						<fieldset>
+							<div class="field select filter i:filterSelector">
+	 							<label for="select_filter">Filter</label>
+								<select name="filter" id="select_filter">
+									<option value="" selected="selected"></option>
+									<option value="pickme">Pick me</option>
+								</select>
+							</div>
+						</fieldset>
+					</div>
+
+				</div>
+				<div class="body">
+
+					<div class="results">
+						<div class="header">
+							<span>Accounts</span>
+						</div>
+						<div class="template row">
+							<span class="breadcrumb">{account_hierarchy_path}</span>
+							<h3><a href="/templates/um-agreement-add.html">{account_name} (#{account_id})</a></h3>
+						</div>
+						<div class="row">
+							<div class="pretext">Search to see accounts</div>
+						</div>
+					</div>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

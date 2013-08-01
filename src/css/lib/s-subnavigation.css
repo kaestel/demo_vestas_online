@@ -1,0 +1,21 @@
+#subnavigation {width: 100%; height: 60px; position: relative;}
+#subnavigation ul {font-size: 0; text-align: left; margin: 0 40px;}
+#subnavigation ul li {display: inline-block; padding: 0 5px 0 0; position: relative; text-align: center;}
+
+#subnavigation ul li h4 {background: #adafaf; height: 40px; padding: 0 20px;
+	-moz-box-shadow: 0 2px 3px -1px #333333;
+	box-shadow: 0 2px 3px -1px #333333;
+}
+#subnavigation ul li h4:hover {background: #37424a;}
+
+#subnavigation ul li h4 a {color: white; font-size: 14px; display: block; line-height: 18px; padding: 11px 0 0; height: 38px;}
+#subnavigation ul li h4 a:hover {text-decoration: none;}
+
+#subnavigation ul li.selected h4 {background: #0091d7;}
+#subnavigation ul li.selected h4 a {background: transparent url(/img/bg_subnavigation_sel.png) no-repeat center 40px;}
+
+
+#subnavigation .actions {position: absolute; right: 0; top: 0;}
+#subnavigation .actions li {padding: 9px 0 0 5px; width: auto; vertical-align: top;}
+/*#subnavigation .actions li a.tool {background: #37424a; border: none; padding: 7px 16px; color: white;}*/
+

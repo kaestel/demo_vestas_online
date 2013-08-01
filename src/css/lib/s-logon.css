@@ -1,0 +1,26 @@
+#content.logon {position:relative; margin-top: 20px;}
+
+.logonsplash {margin: 0 40px 20px 40px;}
+
+#content.logon .box {margin-bottom: 20px; min-height: 295px;}
+
+#content.logon .box h3 {padding-left: 40px;}
+#content.logon .box p {padding: 0 0 0 40px;}
+#content.logon .box form {padding: 0 0 27px 40px;}
+#content.logon .box form .field {height: 90px; padding-left: 0;}
+#content.logon .box form .field .reset {margin-left: 15px; color: #0091D7;}
+
+#content.logon .box form ul.actions {padding: 0;}
+
+#content.logon .box.reset {display: none;}
+#content.logon .box.reset .field {height: 97px;}
+#content.logon .box.reset label {max-width: 600px;}
+
+#content.logon .servicenavigation {position: relative; height: 33px; padding-top: 7px;}
+#content.logon .servicenavigation .copyright {color: #37424a; position: absolute; left: 0;}
+#content.logon .servicenavigation ul {position: absolute; right: 0;}
+#content.logon .servicenavigation ul li {display: inline-block; padding-left: 20px;}
+#content.logon .servicenavigation ul li a {color: #0091d7;}
+
+
+.SAP {display: none;}

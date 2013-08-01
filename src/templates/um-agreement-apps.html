@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- (c) & (p) hvadhedderde.com 2011 //-->
+	<!-- All material protected by copyrightlaws, as if you didnt know //-->
+	<title>Vestas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_desktop_include.css" />
+	<script type="text/javascript" src="/js/lib/seg_desktop_include.js"></script>
+</head>
+<body>
+
+<div id="page" class="i:page">
+
+	<div id="header">
+		<div class="c400">
+
+			<div class="info">
+
+				<div class="jumpboardlink"><a href="/templates/jumpboard.html" title="Jump Board">Jump Board</a></div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="banner"></div>
+
+	<div id="subnavigation">
+		<ul>
+			<li class="selected"><h4><a href="/templates/um-agreements.html">Agreements</a></h4></li>
+			<li><h4><a href="/templates/um-agreement-users.html">Users</a></h4></li>
+		</ul>
+		<ul class="actions">
+			<li class="i:feedback"><a href="/templates/ajax/feedback.html" class="button tool feedback">Feedback</a></li>
+			<li class="i:sharepage"><a href="/templates/ajax/sharepage.html" class="button tool share">Share</a></li>
+		</ul>
+	</div>
+
+	<div id="content" class="UserManagement agreementapps">
+
+		<div class="box">
+			<div class="header">
+				<h2></h2>
+			</div>
+			<div class="body">
+
+				<div class="c">
+					<div class="c100">
+						<ul class="navigation">
+							<li>
+								<h4><a href="/templates/um-agreements.html">Agreement</a></h4>
+								<ul>
+									<li><h5><a href="/templates/um-accounts.html">Accounts</a></h5></li>
+									<li class="selected"><h5><a href="/templates/um-agreement-apps.html">Applications</a></h5></li>
+									<li><h5><a href="/templates/um-agreement-users.html">Users</a></h5></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<div class="c300">
+
+						<h3>Applications covered by agreement</h3>
+						<p>Choose and edit applications which this agreement covers</p>
+
+						<form action="/templates/ajax/update_agreement_applications.json" method="post" class="i:form send:jdata i:UserManagementApps">
+							
+							<ul class="actions">
+								<li class="submit"><input type="submit" value="Save changes" class="button primary" /></li>
+							</ul>
+
+							<div class="application">
+								<div class="applicationname">
+									<h4>Collaboration Room</h4>
+								</div>
+								<div class="image">
+									<img src="/img/dummy/bg_app_logo_3.png" alt="Collaboration Room"/>
+								</div>
+								<div class="state">
+									<div class="field radio">
+										<input type="radio" name="app[ColRoom][state]" value="1" id="app1_radio_on" checked="checked" />
+										<label for="app1_radio_on">On</label>
+									</div>
+									<div class="field radio">
+										<input type="radio" name="app[ColRoom][state]" value="0" id="app1_radio_off" />
+										<label for="app1_radio_off">Off</label>
+									</div>
+								</div>
+								<div class="description"></div>
+								<div class="settings"></div>
+							</div>
+
+							<div class="application">
+								<div class="applicationname">
+									<h4>Issue Manager</h4>
+								</div>
+								<div class="image">
+									<img src="/img/dummy/bg_app_logo_3.png" alt="Issue Manager"/>
+								</div>
+								<div class="state">
+									<div class="field radio">
+										<input type="radio" name="app[IsMan][state]" value="1" id="app2_radio_on" checked="checked" />
+										<label for="app2_radio_on">On</label>
+									</div>
+									<div class="field radio">
+										<input type="radio" name="app[IsMan][state]" value="0" id="app2_radio_off" />
+										<label for="app2_radio_off">Off</label>
+									</div>
+								</div>
+								<div class="description"></div>
+								<div class="settings"></div>
+							</div>
+
+							<ul class="actions">
+								<li class="submit"><input type="submit" value="Save changes" class="button primary" /></li>
+							</ul>
+
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+	"success":true,
+	"result":[
+		{
+			"account_id":"0000011123",
+			"account_name":"St. Maartensdijk",
+			"account_hierarchy_path":"xxxxx > yyyyy > zzzzzz",
+			"account_hierarchy_depth":0
+		},
+		{
+			"account_id":"0000011232",
+			"account_name":"Dalfserveld",
+			"account_hierarchy_path":"xxxxx > yyyyy > zzzzzz",
+			"account_hierarchy_depth":0
+		},
+		{
+			"account_id":"0000011234",
+			"account_name":"Windplan Veldhoeve",
+			"account_hierarchy_path":"xxxxx > yyyyy > zzzzzz",
+			"account_hierarchy_depth":0
+		},
+		{
+			"account_id":"0000011238",
+			"account_name":"Dalfserveld",
+			"account_hierarchy_path":"xxxxx > yyyyy > zzzzzz",
+			"account_hierarchy_depth":0
+		},
+		{
+			"account_id":"0000012315",
+			"account_name":"Alikruikweg",
+			"account_hierarchy_path":"xxxxx > yyyyy > zzzzzz",
+			"account_hierarchy_depth":0
+		},
+		{
+			"account_id":"0000012330",
+			"account_name":"Kiruna, Pahtohavare",
+			"account_hierarchy_path":"xxxxx > yyyyy > zzzzzz",
+			"account_hierarchy_depth":0
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"success": "true",
+	"result": [
+		{
+			"agreement_id": 23,
+			"agreement_title": "agreement_title 1",
+			"agreement_expire_date": "1334228890",
+			"agreement_valid_from_date": "1994228890"
+		},
+		{
+			"agreement_id": 26,
+			"agreement_title": "agreement_title 2",
+			"agreement_expire_date": "1334228890",
+			"agreement_valid_from_date": "1994228890"
+		}
+	]
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- (c) & (p) hvadhedderde.com 2011 //-->
+	<!-- All material protected by copyrightlaws, as if you didnt know //-->
+	<title>Vestas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_desktop_include.css" />
+	<script type="text/javascript" src="/js/lib/seg_desktop_include.js"></script>
+</head>
+<body>
+
+<div id="page" class="i:page">
+
+	<div id="header">
+		<div class="c400">
+
+			<div class="info">
+				<div class="jumpboardlink"><a href="/docs/index.html" title="Back to documentation">Documentation</a></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="banner"></div>
+
+	<div id="subnavigation">
+		<ul>
+			<li><h4><a href="index.html">Docs home</a></h4></li>
+			<li class="selected"><h4><a href="html-intro.html">HTML</a></h4></li>
+			<li><h4><a href="js-intro.html">JavaScript</a></h4></li>
+		</ul>
+	</div>
+
+	<div id="content" class="docs">
+
+		<div class="box">
+			<div class="header">
+				<h2>Forms and Buttons</h2>
+			</div>
+			<div class="body">
+
+				<h3>Forms</h3>
+				<p>
+					Forms, regardless of wether they are regular HTML forms or AJAX forms
+					with JSON response, should be written in the same way - as a plain regular 
+					HTML form using the specified HTML syntax and the <a href="/docs/js-i-form.html">i:form</a>
+					initializer class.
+				</p>
+				<p>
+					See <a href="/docs/js-i-form.html">i:form</a> for more information about 
+					form variations.
+				</p>
+
+				<code>
+&lt;form name=&quot;logon&quot; action=&quot;#URL#&quot; method=&quot;#METHOD#&quot; class&quot;i:form&quot;&gt;
+	&lt;fieldset&gt;
+		&lt;div class=&quot;field string optional&quot;&gt; ... &lt;/div&gt;
+		&lt;div class=&quot;field string required&quot;&gt; ... &lt;/div&gt;
+	&lt;/fieldset&gt;
+	&lt;ul class=&quot;actions&quot;&gt; ... &lt;/ul&gt;
+&lt;/form&gt;
+				</code>
+
+				<p>
+					You can see a demo on the <a href="html-form-demo.html">form demo page</a>.
+				</p>
+
+				<h3>&lt;form&gt;</h3>
+				<p>
+					A &lt;form&gt; with action, method and name. The <em>action</em>-attribute
+					specifies primary form url, the <em>method</em>-attribute specifies the way
+					the form parameters are submitted.
+				</p>
+				<p>
+					Use &lt;fieldset&gt;s to group sets of fields.<br />
+					NOTE: You should NEVER be applied any styles to the &lt;fieldset&gt;
+					- it is only used for structural purposes.
+				</p>
+
+				<h3>&lt;div class=&quot;field&quot;&gt;</h3>
+				<p>
+					The form is composed of a set of fields, individually wrapped in a
+					&lt;div class=&quot;field&quot;&gt;, specifying the field types.
+					Inputs, selects and textareas wrapped in correct field-types are 
+					automatically extended with clientside validation with hints and error handling.
+				</p>
+
+				<code>
+&lt;div class=&quot;field string optional&quot;&gt;
+	&lt;label for=&quot;name&quot;&gt;Navn&lt;/label&gt;
+	&lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; value=&quot;&quot; /&gt;
+	&lt;p class=&quot;error&quot;&gt;Error message&lt;/p&gt;
+	&lt;p class=&quot;hint&quot;&gt;Hint message&lt;/p&gt;
+&lt;/div&gt;
+				</code>
+
+				<p>
+					A field must contain a &lt;label&gt; and an &lt;input&gt;/&lt;select&gt;/&lt;textarea&gt.
+				</p>
+				<p>
+					&lt;label&gt;s for-attribute must match &lt;input&gt;, &lt;select&gt; or
+					&lt;textarea&gt; ID-attribute.
+				</p>
+				<p>
+					&lt;input&gt;s must have a valid <em>type</em>-attribute.
+				</p>
+				<p>
+					&lt;input&gt;s, &lt;select&gt;s and
+					&lt;textarea&gt;s must have a valid <em>name</em>-attribute.
+				</p>
+
+				<p>
+					The field class is used to specify additional info about the field, such as field-type and
+					whether the field is optional or required. The field must have a valid type-declaration to be
+					initialized.
+				</p>
+				<h4>Field types</h4>
+				<ul class="list">
+					<li><em>string</em> for input type text. Validation requires min. 2 chars text in input.</li>
+					<li><em>email</em> for input type email. Validation requires valid formatted email.</li>
+					<li><em>text</em> for textareas. Validation requires min. 3 chars text in textarea.</li>
+ 					<li><em>select</em> for selects. Validation requires selected option with value.</li>
+					<li><em>checkbox</em> for checkboxex. Validation requires selection.</li>
+					<li><em>radio</em> for radiobuttons. Validation requires one selection in radio-group.</li>
+					<li><em>date</em> for date fields. Validation requires valid date.</li>
+				</ul>
+				<p>If a field is required, the <em>required</em> must be added.</p>
+				<p>
+					A .field can have a supporting &lt;p class=&quot;error&quot;&gt;
+					and/or &lt;p class=&quot;hint&quot;&gt; to be used with JavaScript validation.
+				</p>
+
+				<h3>&lt;ul class=&quot;actions&quot;&gt;</h3>
+				<p>
+					Buttons are always placed in a &lt;ul class=&quot;actions&quot;&gt;, preferably
+					outside &lt;fieldset&gt;s, but always inside the &lt;form&gt; they relate to.
+				</p>
+				<code>
+&lt;ul class=&quot;actions&quot;&gt;
+	&lt;li class=&quot;cancel&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;submit&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;#name#&quot; class=&quot;button primary&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+				</code>
+				<p>
+					Each button is placed inside its own LI and should have a defining classname.
+					Common &lt;li&gt; classnames are <em>submit</em>, <em>cancel</em>, <em>reset</em>,
+					<em>back</em>, <em>info</em>, <em>add</em>, <em>edit</em>, <em>new</em>, <em>close</em>.
+					Try to reuse existing names if possible - but the primary objective is to make the HTML
+					easy to read.
+				</p>
+				<p>
+					A button can be either a &lt;a class=&quot;button&quot;&gt; or an &lt;input 
+					class=&quot;button&quot;&gt;. 
+				</p>
+				<p>
+					The submit button should always be an &lt;input 
+					class=&quot;button&quot; type=&quot;submit&quot;&gt;.
+				</p>
+
+				<h4>Button types</h4>
+				<ul class="list">
+					<li><em>button</em> - plain neutral button</li>
+					<li><em>button primary</em> - primary action, typically a submit</li>
+					<li><em>button tool</em> - tool button with an icon, like share page</li>
+					<li><em>button disabled</em> - disabled button</li>
+				</ul>
+
+				<p>
+					Adding a <em>disabled</em> class to a button will make it unclickable and grayed out.
+					The disabled class can be added to any other button type.
+				</p>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<div class="tagline">Wind. It means the world to us.&trade;</div>
+	</div>
+
+</div>
+
+</body>
+</html>

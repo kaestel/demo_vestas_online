@@ -1,0 +1,127 @@
+#content.UserManagement .template {display: none;}
+
+/* LEFT NAVIGATION */
+#content.UserManagement .navigation {padding: 26px 0 2px;}
+#content.UserManagement .navigation li {padding: 0; white-space: nowrap;}
+#content.UserManagement .navigation li h4 {padding: 2px 5px 3px; margin: 0;}
+#content.UserManagement .navigation li h4 a {color: #0091d7; padding: 9px 12px 8px; display: block; font-weight: bold; font-size: 15px;}
+#content.UserManagement .navigation li h4 a:hover {text-decoration: none; background: #ecf5fb;}
+#content.UserManagement .navigation li.selected h4 a {text-decoration: none; background: #ecf5fb;}
+#content.UserManagement .navigation li h5 {padding: 3px 5px 2px; margin: 0;}
+#content.UserManagement .navigation li h5 a {color: #0091d7; padding: 7px 12px 6px 30px; display: block; font-weight: bold;}
+#content.UserManagement .navigation li h5 a:hover {text-decoration: none; background: #ecf5fb;}
+
+#content.UserManagement .navigation li li.selected h5 a {text-decoration: none; background: #ecf5fb;}
+
+#content.UserManagement .navigation li .notification {display: inline-block; background: #37424a; border-radius: 2px; padding: 3px 5px 2px; color: white; font-size: 12px; font-weight: bold; line-height: 14px; margin: 0 0 0 20px;
+	-moz-box-shadow: 0 2px 2px #666666;
+	box-shadow: 0 2px 2px #666666;
+}
+
+
+
+#content.UserManagement .c .c100 {}
+#content.UserManagement .c .c300 {border-left: 1px solid #cccccc; margin-left: -1px;}
+
+
+#content.UserManagement .body .application + .actions {padding-top: 23px;}
+
+#content.UserManagement .box .body td a {color: #0091d7;}
+
+#content.UserManagement .box .body {}
+#content.UserManagement .box .body form .actions {}
+#content.UserManagement .box .body .results {}
+#content.UserManagement .box .body .results .header {padding: 5px 20px; height: auto; background: #eaeae8; box-shadow: none;}
+#content.UserManagement .box .body .results .header span {font-size: 11px; color: #5E6365; font-weight: bold;}
+
+#content.UserManagement .box .body .results .pretext {padding: 5px 20px; font-size: 12px;}
+
+#content.UserManagement .box .body .results div.row {border-top: 1px solid #eaebeb;}
+#content.UserManagement .box .body .results div.row span.breadcrumb {font-size: 11px; display: block; padding: 7px 20px 0;}
+#content.UserManagement .box .body .results div.row h3 {font-size: 13px; line-height: 17px; display: block; padding: 0px 20px 7px; margin: 0;}
+
+
+/* AGREEMENTS */
+#content.UserManagement.agreements {}
+
+
+/* ADD AGREEMENT */
+#content.UserManagement.addagreement form h4 {padding-top: 20px;}
+#content.UserManagement.addagreement form .field {font-size: 0;}
+
+
+/* ACCOUNTS */
+#content.UserManagement.accounts .body .actions li.disabled input {background-color: white; color: #cccccc;}
+#content.UserManagement.accounts .search {margin-top: 0; padding: 0; border-top: 1px solid #CCCCCC; height: auto;}
+#content.UserManagement.accounts .search h2 {font-size: 14px; font-weight: bold; line-height: 16px; margin: 0; padding: 10px 20px; background: #eaeae8;}
+#content.UserManagement.accounts ul.tree {margin-bottom: 20px;}
+
+
+/* ACCOUNT AGREEMENTS */
+#content.UserManagement.accountagreements {}
+
+
+/* AGREEMENT APPS */
+#content.UserManagement.agreementapps {}
+#content.UserManagement.agreementapps .application {border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc; margin-bottom: -1px;}
+#content.UserManagement.agreementapps .application .applicationname h4 {background: #eaeae8; padding: 10px 20px;}
+#content.UserManagement.agreementapps .application .image {display: inline-block; width: 73px; padding: 20px 20px 0; vertical-align: top;}
+#content.UserManagement.agreementapps .application .state {display: inline-block; width: 300px; padding: 30px 0; vertical-align: top;}
+#content.UserManagement.agreementapps .application .state .field {height: 25px;}
+
+/* AGREEMENT USERS */
+#content.UserManagement.agreementusers {}
+#content.UserManagement.agreementusers .tab_panes .actions {position: relative;}
+#content.UserManagement.agreementusers .tab_panes .actions .disable_users {position: absolute; right: 20px; top: 0; margin-right: 0;}
+
+
+
+/* USERS */
+#content.UserManagement.users .filters {float: left;}
+
+
+/* VIEW USER */
+#content.UserManagement.user {}
+#content.UserManagement.user .box .body .results {border-bottom: 1px solid #cccccc;}
+#content.UserManagement.user .body .actions {padding-top: 20px;}
+#content.UserManagement.user .application {border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc; margin-bottom: -1px;}
+#content.UserManagement.user .application .applicationname h4 {background: #eaeae8; padding: 10px 20px;}
+#content.UserManagement.user .application .image {display: inline-block; width: 73px; padding: 20px 20px 0; vertical-align: top;}
+
+
+/* FIND USER */
+#content.UserManagement.finduser {}
+#content.UserManagement.finduser .field {display: inline-block; padding-right: 0; vertical-align: top;}
+#content.UserManagement.finduser .body .actions {display: inline-block; vertical-align: top; padding-top: 23px;}
+
+
+/* ADD USER */
+#content.UserManagement.adduser {}
+#content.UserManagement.adduser .body .actions {margin-top: 20px;}
+#content.UserManagement.adduser .application {border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc; margin-bottom: -1px;}
+#content.UserManagement.adduser .application .applicationname h4 {background: #eaeae8; padding: 10px 20px;}
+#content.UserManagement.adduser .application .image {display: inline-block; width: 73px; padding: 20px 20px 0; vertical-align: top;}
+#content.UserManagement.adduser .application .state {display: inline-block; width: 300px; padding: 30px 0; vertical-align: top;}
+#content.UserManagement.adduser .application .state .field {height: 25px;}
+
+/* EDIT USER */
+#content.UserManagement.edituser {}
+#content.UserManagement.edituser .body .actions {margin-top: 20px;}
+#content.UserManagement.edituser .application {border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc; margin-bottom: -1px;}
+#content.UserManagement.edituser .application .applicationname h4 {background: #eaeae8; padding: 10px 20px;}
+#content.UserManagement.edituser .application .image {display: inline-block; width: 73px; padding: 20px 20px 0; vertical-align: top;}
+#content.UserManagement.edituser .application .state {display: inline-block; width: 300px; padding: 30px 0; vertical-align: top;}
+#content.UserManagement.edituser .application .state .field {height: 25px;}
+
+
+
+/* APPS COVERED BY AGREEMENT */
+#content.UserManagement.agreementapps .application {border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc; margin-bottom: -1px;}
+#content.UserManagement.agreementapps .application .applicationname h4 {background: #eaeae8; padding: 10px 20px;}
+#content.UserManagement.agreementapps .application .image {display: inline-block; width: 73px; padding: 20px 20px 0; vertical-align: top;}
+#content.UserManagement.agreementapps .application .state {display: inline-block; width: 300px; padding: 30px 0; vertical-align: top;}
+#content.UserManagement.agreementapps .application .state .field {height: 25px;}
+
+
+
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- (c) & (p) hvadhedderde.com 2011 //-->
+	<!-- All material protected by copyrightlaws, as if you didnt know //-->
+	<title>Vestas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_desktop_include.css" />
+	<script type="text/javascript" src="/js/lib/seg_desktop_include.js"></script>
+</head>
+<body>
+
+<div id="page" class="i:page">
+
+	<div id="header">
+		<div class="c400">
+
+			<div class="info">
+
+				<div class="jumpboardlink"><a href="/templates/jumpboard.html" title="Jump Board">Jump Board</a></div>
+
+				<div class="user">
+					<h3>Henrik John Andersen</h3>
+					<div class="notification">12</div>
+					<ul>
+						<li><h4><a href="/templates/myacc-account.html">My Account</a></h4></li>
+						<li><h4><a href="#">My Documents</a></h4></li>
+						<li><h4><a href="/templates/logon.html">Sign Out</a></h4></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div id="navigation">
+				<h3>Launch App</h3>
+				<ul>
+					<li><h4><a href="#">Collaboration Room</a></h4></li>
+					<li><h4><a href="#">Document Sharing</a></h4></li>
+					<li>
+						<h4><a href="/templates/issue_manager.html">Issue Manager</a></h4>
+						<div class="notification">New version!</div>
+					</li>
+					<li><h4><a href="#">Performance Manager</a></h4></li>
+					<li class="add"><h4><a href="/templates/add_application.html">Add Application</a></h4></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="banner"></div>
+
+	<div id="subnavigation">
+		<ul>
+			<li><h4><a href="/templates/jumpboard.html">Jump Board</a></h4></li>
+			<li class="selected"><h4><a href="/templates/add_application.html">Add Application</a></h4></li>
+			<li><h4><a href="/templates/get_started.html">Get Started</a></h4></li>
+		</ul>
+		<ul class="actions">
+			<li class="i:feedback"><a href="/templates/ajax/feedback.html" class="button tool feedback">Feedback</a></li>
+			<li class="i:sharepage"><a href="/templates/ajax/sharepage.html" class="button tool share">Share</a></li>
+		</ul>
+	</div>
+
+	<div id="content" class="apps_details i:apps_details">
+		
+		<div class="box">
+			<div class="header">
+				<ul class="actions">
+					<li class="back"><a href="/templates/add_application.html">Back</a></li>
+				</ul>
+			</div>
+			
+			<div class="body">
+				
+				<div class="c">
+					<div class="c266">
+						
+						<div class="description">
+							<h3>Issue Manager</h3>
+
+							<div class="wysiwyg">
+								<p>Short descriptive teaser text in bold that summarizes the benefits of this App...</p>
+								<ul>
+									<li>Benefit number 01</li>
+									<li>Benefit number 02</li>
+									<li>Benefit number 03</li>
+								</ul>
+								<p>Paragraph of text that elaborates on the specific benefits of this particular app. information about which features and functionalities it comprises - and perhaps additional information about which other apps it could benefit from being seen in relation too....</p>
+								<p>If this specific app is part of an "App Pack" information about this should also go here...</p>
+								<h4>How To Get Started</h4>
+								<p>Short paragraph of text that informs user about HOW EASY it is to get started using this app - "All you need to do is....."</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="c133">
+						
+						<div class="app">
+							<img src="/img/dummy/bg_app_detail_logo_1.png" alt="Issue Manager"/>
+							
+							<ul class="actions">
+								<li class="add">
+									<form action="/templates/ajax/MDAddApp.json" method="post" name="add_IssueManager">
+										<input type="hidden" name="appid" value="IssueManager" />
+										<input type="hidden" name="appurl" value="http://vestas.local/testapp" />
+										<input type="hidden" name="appname" value="Issue Manager" />
+										<input type="submit" value="Add App" class="button primary" />
+									</form>
+								</li>
+							</ul>
+							
+							<ul class="actions">
+								<li class="add">
+									<form>
+										<input type="button" value="Already installed" class="button disabled" />
+									</form>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				
+				
+				<!-- <div class="screenshots">
+									<h3>Application Screenshots</h3>
+									
+									<div class="image_box without_thumbnails">
+										<div class="image_box_inner">
+											<div class="image">
+												<img src="/img/dummy/pi_app_shot_01.png" alt="" />
+												<img src="/img/dummy/pi_app_shot_01.png" alt="" />
+												<img src="/img/dummy/pi_app_shot_01.png" alt="" />
+											</div>
+										</div>
+									</div>
+								</div> -->
+				
+				
+				<!-- TODO: Backend cannot handle this yet, so we are using the above for a start -->
+				<!-- Only html difference is .without_thumbnails and that the list is gone -->
+				<div class="screenshots">
+					<h3>Application Screenshots</h3>
+					
+					<div class="image_box">
+						<div class="image_box_inner">
+							<div class="image">
+								<img src="/img/dummy/pi_app_shot_01.png" alt="" />
+							</div>
+							<ul class="thumbs">
+								<li class="sel"><a href="/img/dummy/pi_app_shot_01.png"><img src="/img/dummy/pi_app_thumb_01.png" alt="" /></a></li>
+								<li><a href="/img/dummy/pi_app_shot_02.png"><img src="/img/dummy/pi_app_thumb_02.png" alt="" /></a></li>
+								<li><a href="/img/dummy/pi_app_shot_03.png"><img src="/img/dummy/pi_app_thumb_03.png" alt="" /></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* WIDGET */
+#content .widgets .IssueManager table {border-collapse: collapse; margin: 0; padding: 0; width: 100%;}
+#content .widgets .IssueManager table * {font-size: 13px;}
+
+#content .widgets .IssueManager th {height: 30px; background: #eaeae8; padding: 3px 20px 0 0; font-weight: bold; color: #5e6365; font-size: 11px;}
+#content .widgets .IssueManager th:first-child {padding: 3px 20px 0 20px;}
+#content .widgets .IssueManager th.date {width: 70px;}
+#content .widgets .IssueManager th.subject {width: 270px;}
+#content .widgets .IssueManager th.status {width: 90px;}
+
+#content .widgets .IssueManager td {height: 45px; border-bottom: 1px solid #eaebeb; padding: 0 20px 0 0;}
+#content .widgets .IssueManager td,
+#content .widgets .IssueManager td a {color: #000000;}
+#content .widgets .IssueManager td a {white-space: nowrap; overflow: hidden; width: 250px; display: block;}
+
+#content .widgets .IssueManager td a:hover {text-decoration: none;}
+#content .widgets .IssueManager td:first-child {padding: 0 20px;}
+
+#content .widgets .IssueManager tr.link {cursor: pointer;}
+#content .widgets .IssueManager tr.new td,
+#content .widgets .IssueManager tr.new td a {color: #0091d7;}
+
+#content .widgets .IssueManager tr:hover td {background: #ecf5fb;}
+
+
+
+/* IM LIST */
+#content.IssueManager {}
+#content.IssueManager .box {overflow: visible;}
+
+#content.IssueManager .header {position: relative;}
+
+#content.IssueManager .body tr:hover td {background: #ecf5fb;}
+#content.IssueManager .body td a {display: block;}
+#content.IssueManager .body td a:hover {text-decoration: none;}
+
+#content.IssueManager .body td.togglable {}
+#content.IssueManager .body td .toggler {float: left; margin-top: -2px; width: 20px; height: 20px; background: transparent url(/img/bg_icons.png) no-repeat 0 0; cursor: pointer;}
+#content.IssueManager .body td.open .toggler {background-position: 0 -100px;}
+
+#content.IssueManager .body td.togglable h3 {padding: 0 0 0 29px; margin: 0; height: 18px; font-weight: normal;}
+#content.IssueManager .body td.togglable .description {padding-left: 29px; overflow: hidden;}
+#content.IssueManager .body td.togglable p {padding: 8px 0 0; margin: 0;}
+
+#content.IssueManager .actions .more {margin-bottom: 37px;}
+#content.IssueManager .actions .more input {display: block; width: 100%;}
+
+
+
+/* APPLICATION VIEW */
+#content.IssueManagerView {}
+#content.IssueManagerView .body {font-size: 0;}
+#content.IssueManagerView .body .view {border-right: 1px solid #eaebeb; overflow: hidden;}
+#content.IssueManagerView .body .view .description {padding-bottom: 15px;}
+
+
+
+#content.IssueManagerView .body .view .issue {}
+#content.IssueManagerView .body .view .issue h5 {padding: 5px 20px 14px 50px; font-weight: normal; color: #0091d7; background: transparent url(/img/bg_icons.png) no-repeat 20px 3px; cursor: pointer;}
+#content.IssueManagerView .body .view .issue.open h5 {background-position: 20px -97px;}
+#content.IssueManagerView .body .view .issue .initdescription {margin-bottom: 14px; overflow: hidden;}
+
+#content.IssueManagerView .body .view .solution h4 {float: left; padding-right: 0; padding-top: 1px;}
+#content.IssueManagerView .body .view .solution .notification {float: left; clear: right; background: #e37222; border-radius: 2px; padding: 3px 5px 2px; color: #ffffff; margin: 0 0 0 8px; font-size: 12px; font-weight: bold; line-height: 14px;}
+#content.IssueManagerView .body .view .solution .description {clear: left;}
+
+#content.IssueManagerView .body .view .comments .actions {margin: 0 20px; background: #f7f7f6; padding: 10px 10px; border-top: 1px solid #d5d6d2; border-bottom: 1px solid #d5d6d2;}
+#content.IssueManagerView .body .view .comments .actions li {margin: 0 -19px 0 0; display: block; padding: 2px 0;}
+#content.IssueManagerView .body .view .comments .actions li.more.active {cursor: pointer; background: transparent url(/img/bg_icons.png) no-repeat right -200px;}
+#content.IssueManagerView .body .view .comments .actions li.more.open {cursor: pointer; background: transparent url(/img/bg_icons.png) no-repeat right -300px;}
+#content.IssueManagerView .body .view .comments .actions .button {padding: 0; margin: 0; border-radius: 0; box-shadow: none; border: 0; background: transparent; color: #0091d7; font-weight: normal;}
+
+#content.IssueManagerView .body .view .comments .slide {margin: 0 20px;}
+#content.IssueManagerView .body .view .comments ul.list {margin: 0; font-size: 0; padding: 0;}
+#content.IssueManagerView .body .view .comments ul.list li {padding: 20px 0; overflow: hidden; border-bottom: 1px solid #eaebeb;}
+#content.IssueManagerView .body .view .comments ul.list li.template {display: none;}
+#content.IssueManagerView .body .view .comments ul.list li .image {float: left;}
+#content.IssueManagerView .body .view .comments ul.list li .image img {width: 60px;}
+#content.IssueManagerView .body .view .comments ul.list li .published {padding: 0 0 0 79px; color: #adafaf; margin-top: -4px; font-size: 11px;}
+#content.IssueManagerView .body .view .comments ul.list li .author {padding: 0 0 0 79px; font-size: 14px; font-weight: bold;}
+#content.IssueManagerView .body .view .comments ul.list li .comment {padding: 0 0 0 79px;}
+
+
+#content.IssueManagerView .body .view .addcomment {padding: 20px;}
+#content.IssueManagerView .body .view .addcomment .image {float: left; padding-top: 21px; width: 60px;}
+#content.IssueManagerView .body .view .addcomment form {padding: 0 0 0 79px;}
+#content.IssueManagerView .body .view .addcomment form .field {padding: 0;}
+#content.IssueManagerView .body .view .addcomment form textarea {display: block; width: 96%;}
+#content.IssueManagerView .body .view .addcomment form .actions {padding: 20px 0 0;}
+
+#content.IssueManagerView .body .view .addcomment .notice {margin: 0 auto; overflow: hidden; clear: both;}
+#content.IssueManagerView .body .view .addcomment .notice .inner {margin-bottom: 20px; background: #d7f5bf url(/img/bg_notice.png) no-repeat 21px 8px;}
+#content.IssueManagerView .body .view .addcomment .notice.error .inner {background-color: #f0bfbf; background-position: 21px -192px;}
+#content.IssueManagerView .body .view .addcomment .notice p {padding: 13px 20px 13px 58px; color: #71be33; background: url(/img/bg_notice_buttons.png) no-repeat right 0; cursor: pointer;}
+#content.IssueManagerView .body .view .addcomment .notice.error p {color: #c30000; background-position: right -200px;}
+#content.IssueManagerView .body .view .addcomment .notice.receipt {}
+
+
+
+#content.IssueManagerView .body .details {margin-left: -1px; border-left: 1px solid #eaebeb; padding-bottom: 37px; border-bottom: 1px solid #eaebeb;}
+	
+#content.IssueManagerView .body .details dl.list {padding-bottom: 15px; border-bottom: 1px solid #eaebeb;}
+#content.IssueManagerView .body .details dl.list dt {font-weight: normal;}
+#content.IssueManagerView .body .details .vcard .org {display: none;}
+#content.IssueManagerView .body .details .template {display: none;}
+
+
+

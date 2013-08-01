@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- (c) & (p) hvadhedderde.com 2011 //-->
+	<!-- All material protected by copyrightlaws, as if you didnt know //-->
+	<title>Vestas</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link type="text/css" rel="stylesheet" media="all" href="/css/lib/seg_desktop_include.css" />
+	<script type="text/javascript" src="/js/lib/seg_desktop_include.js"></script>
+</head>
+<body>
+
+<div id="page" class="i:page">
+
+	<div id="header">
+		<div class="c400">
+
+			<div class="info">
+				<div class="jumpboardlink"><a href="/docs/index.html" title="Back to documentation">Documentation</a></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="banner"></div>
+
+	<div id="subnavigation">
+		<ul>
+			<li class="selected"><h4><a href="index.html">Docs home</a></h4></li>
+			<li><h4><a href="html-intro.html">HTML</a></h4></li>
+			<li><h4><a href="js-intro.html">JavaScript</a></h4></li>
+		</ul>
+	</div>
+
+	<div id="content" class="docs">
+
+		<div class="box">
+			<div class="header">
+				<h2>Code guidelines</h2>
+			</div>
+
+			<div class="body">
+
+				<h3>General HTML guidelines</h3>
+				<p>
+					The HTML templates have been structure and designed to work across different devices to ensure forward and backwards compatibility.
+					The functionality layer (JavaScript) and the design layer (CSS) are kept separate from the HTML, so they can be changed depending on which device is visiting the page.
+				</p>
+				<p>It means the HTML should be clean, structural and semantic. And it means:</p>
+
+				<ul class="list">
+					<li><strong>NEVER</strong> use inline CSS! No style attributes. No style tags.</li>
+					<li><strong>NEVER</strong> use inline JavaScript! No onclick attributes. No javascript links. No script tags.</li>
+				</ul>
+				<p>If you add inline CSS or JavaScript it cannot be varied depending on the device and it cannot be updated centrally. Thus we loose ability to build a cross-device experience with a consistant user experience.</p>
+
+				<!--h3>General CSS guidelines</h3>
+				<h3>General JavaScript guidelines</h3>
+				<h3>General JSON guidelines</h3-->
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<div class="tagline">Wind. It means the world to us.&trade;</div>
+	</div>
+
+</div>
+
+</body>
+</html>

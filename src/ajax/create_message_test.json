@@ -1,0 +1,11 @@
+{
+	"success":true,
+	"result":[
+		{
+			"name":"Halfdan Rasmussen 1",
+			"email":"test.test@en-meget-lang-email.com",
+			"role":"Admin",
+			"user_type":"external"
+		}
+	]
+}
