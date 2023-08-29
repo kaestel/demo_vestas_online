@@ -1,0 +1,126 @@
+
+
+
+
+<div id="content" class="UserManagement addagreement i:NewAgreement">
+<div class="box">
+	<div class="header">
+		<ul class="actions">
+		
+			<li class="back"><a href="/irj/portal/ume/agreement?agreementid=185">Back</a></li>
+			
+		</ul>
+	</div>
+	<div class="body">
+
+		
+			<h3>Vestas eBusiness Agreement: A1 (185)</h3>
+		
+		
+		
+		<form action="/util/MDUpdateAgreement" method="POST" class="i:form send:jdata">
+			
+			<input type="hidden" name="ext_user_initials" value="" />
+			<input type="hidden" name="response_success_forward_url" value="/irj/portal/ume/agreement" />
+			<input type="hidden" name="response_success_forward_parameters" value="agreementid" />
+			<input type="hidden" name="agreement_id" value="185" />
+			<fieldset>
+				<div class="field string">
+					<label>Title</label>
+					<input maxlength="50" type="text" name="agreement_title" value="A1" />
+					<p class="hint">String</p>
+					<p class="error">fejl 40</p>
+				</div>
+			</fieldset>
+			
+			<fieldset>
+				<div class="field date required">
+					<label>Agreement date (yyyy.mm.dd)</label>
+					<input type="text" name="agreement_date" value="1325372400000" />
+					<p class="hint">Date</p>
+					<p class="error">Add a agreement date</p>
+				</div>
+				<div class="field date required">
+					<label>Agreement is valid from (yyyy.mm.dd)</label>
+					<input type="text" name="agreement_date_from" value="1325372400000" />
+					<p class="hint">Date</p>
+					<p class="error">Add a valid from date</p>
+				</div>
+				<div class="field date required after:agreement_date_from">
+					<label>Expiry date (yyyy.mm.dd)</label>
+					<input type="text" name="agreement_date_expire" value="1356994800000" />
+					<p class="hint">Date</p>
+					<p class="error">Please add a valid expiry date. The expiry date must be after the valid date.</p>
+				</div>
+			</fieldset>
+			<h4>Vestas agreement signer:</h4>
+			<fieldset>
+				<div class="field string required">
+					<label>Initials</label>
+					<input maxlength="50" type="text" name="int_user_initials" value="lasne" />
+					<p class="hint">String</p>
+					<p class="error">fejl 40</p>
+				</div>
+				<ul class="actions"> 
+					<li class="go">
+						<input type="button" name="go" value="Find Vestas signer" class="button primary" />
+					</li>
+                </ul>
+				
+				<div class="field string">
+					<label>First Name</label>
+					<input maxlength="50" type="text" name="int_user_first_name" value="Lasse" />
+					<p class="hint">String</p>
+					<p class="error">fejl 40</p>
+				</div>		
+				<div class="field string">
+					<label>Last Name</label>
+					<input maxlength="50" type="text" name="int_user_last_name" value="Nejmann" />
+					<p class="hint">String</p>
+					<p class="error">fejl 40</p>
+				</div>	
+			</fieldset>
+			<h4>Client agreement signer:</h4>
+			<fieldset>
+				<div class="field string">
+					<label>First Name</label>
+					<input maxlength="50" type="text" name="ext_user_first_name" value="Signer" />
+					<p class="hint">String</p>
+					<p class="error">Add a first name</p>
+				</div>	
+				<div class="field string  required">
+					<label>Last Name</label>
+					<input maxlength="50" type="text" name="ext_user_last_name" value="Signersen" />
+					<p class="hint">String</p>
+					<p class="error">Add a last name</p>
+				</div>	
+				<div class="field string  required">
+					<label>Company</label>
+					<input maxlength="50" type="text" name="ext_user_company" value="EON" />
+					<p class="hint">String</p>
+					<p class="error">Add a company</p>
+				</div>	
+				<div class="field email required">
+					<label>Email</label>
+					<input maxlength="50" type="text" name="ext_user_email" value="sdfdasfd@jfdaskjfda.dk" />
+					<p class="hint">String</p>
+					<p class="error">Add a valid email address</p>
+				</div>	
+				<div class="field string">
+					<label>Phone</label>
+					<input maxlength="18" type="text" name="ext_user_phone" value="123345" />
+					<p class="hint">String</p>
+					<p class="error">fejl 40</p>
+				</div>	
+			</fieldset>
+
+			<ul class="actions">
+			
+				<li class="submit"><input type="submit" class="button primary" value="Update agreement" /></li>
+			
+			</ul>			
+		</form>
+
+	</div>
+</div>
+</div>

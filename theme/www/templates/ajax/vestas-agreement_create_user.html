@@ -1,0 +1,761 @@
+
+
+
+
+
+
+
+
+<div id="content" class="UserManagement adduser">
+<div class="box">
+	<div class="header">
+		
+		<ul class="actions">
+			
+				<li class="back"><a href="/irj/portal/ume/agreementusers?agreementid=180">Back</a></li>
+				
+		</ul>
+	</div>
+	<div class="body">
+
+		<div class="c">
+			<div class="c100">
+				<ul class="navigation">
+					<li>
+						<h4><a href="/irj/portal/ume/agreement?agreementid=180">Agreement</a></h4>
+						<ul>
+							<li><h5><a href="/irj/portal/ume/agreementaccounts?agreementid=180">Accounts</a></h5></li>
+							<li><h5><a href="/irj/portal/ume/agreementeservices?agreementid=180">Applications</a></h5></li>
+							<li class="selected"><h5><a href="/irj/portal/ume/agreementusers?agreementid=180">Users</a></h5></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+					<div class="c300">
+						<h3>Update user for agreement: Vestas Agreement 1</h3>
+						<form action="/templates/ajax/MDGetAccountChildsByAgreementIdAndUserId.json" method="post" class="accounts i:form type:auto i:UserManagementAgreementUsers">
+							<input type="hidden" name="agreementid" value="180" />
+							<input type="hidden" name="email" value="nejmann@gmail.com" />
+							<input type="hidden" name="agreement_id" value="180" />
+							<input type="hidden" name="save_url" value="/util/MDUpdateUser" class="ignoreinput send:jdata" />
+							<input type="hidden" name="response_success_forward_url" value="/irj/portal/ume/agreementusers" class="ignoreinput" />
+							<input type="hidden" name="response_success_forward_parameters" value="agreementid" class="ignoreinput" />
+
+							<ul class="actions">
+								<li class="submit"><input type="submit" class="button primary" value="Save" /></li>
+							</ul>
+							<fieldset> 
+								<div class="pseudofield string">
+									<dl>
+									<dt>Email</dt>
+									<dd>nejmann@gmail.com</dd>
+									</dl>
+								</div>
+								
+ 								<div class="field select">
+									<label>Title</label>
+									<select id="salutation" name="salutation" >
+										
+										<option value="Company" >Company</option>
+										
+										<option value="Miss" >Miss</option>
+										
+										<option value="Mr and Mrs" >Mr and Mrs</option>
+										
+										<option value="Mr." selected>Mr.</option>
+										
+										<option value="Mrs." >Mrs.</option>
+										
+										<option value="Ms." >Ms.</option>
+										
+										<option value="Wind Farm" >Wind Farm</option>
+										
+									</select>
+									<p class="hint">String</p>
+									<p class="error">fejl 40</p>
+								</div>
+								
+								<div class="field select">
+									<label>Academic title</label>
+									<select id="title" name="title" >
+										
+										<option value="" ></option>
+										
+										<option value="Bachelor of Arts" >Bachelor of Arts</option>
+										
+										<option value="Doctor of Philosophy" >Doctor of Philosophy</option>
+										
+										<option value="Dr" >Dr</option>
+										
+										<option value="Master of Business Administration" selected>Master of Business Administration</option>
+										
+										<option value="Professor" >Professor</option>
+										
+										<option value="Professor Dr" >Professor Dr</option>
+										
+									</select>
+									<p class="hint">String</p>
+									<p class="error">fejl 40</p>
+								</div>
+								
+								<div class="field string">
+									<label>First name</label>
+									<input type="text" name="first_name" value="Lasse" />
+									<p class="hint">String</p>
+									<p class="error">Please enter first name</p>
+								</div>
+								
+								<div class="field string required">
+									<label>Last name</label>
+									<input type="text" name="last_name" value="Nejmann" />
+									<p class="hint">String</p>
+									<p class="error">Please enter last name</p>
+								</div>
+								
+								<div class="field string">
+									<label>Mobile</label>
+									<input type="text" name="cellphone" value="1234567894" />
+									<p class="hint">String</p>
+									<p class="error">fejl 40</p>
+								</div>
+								
+								<div class="field string">
+									<label>Area of responsibility / Job title</label>
+									<input type="text" name="responsibility_area" value="Sales" />
+									<p class="hint">String</p>
+									<p class="error">fejl 40</p>
+								</div>
+								
+								<div class="field select">
+									<label>Country</label>
+									<select id="title" name="title" >
+										
+										<option value="AF" >Afghanistan</option>
+										
+										<option value="AL" >Albania</option>
+										
+										<option value="DZ" >Algeria</option>
+										
+										<option value="VI" >Amer.Virgin Is.</option>
+										
+										<option value="AD" >Andorra</option>
+										
+										<option value="AO" >Angola</option>
+										
+										<option value="AI" >Anguilla</option>
+										
+										<option value="AQ" >Antarctica</option>
+										
+										<option value="AG" >Antigua/Barbuda</option>
+										
+										<option value="AR" >Argentina</option>
+										
+										<option value="AM" >Armenia</option>
+										
+										<option value="AW" >Aruba</option>
+										
+										<option value="AU" >Australia</option>
+										
+										<option value="AT" >Austria</option>
+										
+										<option value="AZ" >Azerbaijan</option>
+										
+										<option value="BS" >Bahamas</option>
+										
+										<option value="BH" >Bahrain</option>
+										
+										<option value="BD" >Bangladesh</option>
+										
+										<option value="BB" >Barbados</option>
+										
+										<option value="BY" >Belarus</option>
+										
+										<option value="BE" >Belgium</option>
+										
+										<option value="BZ" >Belize</option>
+										
+										<option value="BJ" >Benin</option>
+										
+										<option value="BM" >Bermuda</option>
+										
+										<option value="BT" >Bhutan</option>
+										
+										<option value="BO" >Bolivia</option>
+										
+										<option value="BA" >Bosnia-Herz.</option>
+										
+										<option value="BW" >Botswana</option>
+										
+										<option value="BV" >Bouvet Islands</option>
+										
+										<option value="BR" >Brazil</option>
+										
+										<option value="IO" >Brit.Ind.Oc.Ter</option>
+										
+										<option value="VG" >Brit.Virgin Is.</option>
+										
+										<option value="BN" >Brunei Daruss.</option>
+										
+										<option value="BG" >Bulgaria</option>
+										
+										<option value="BF" >Burkina Faso</option>
+										
+										<option value="MM" >Burma</option>
+										
+										<option value="BI" >Burundi</option>
+										
+										<option value="KH" >Cambodia</option>
+										
+										<option value="CM" >Cameroon</option>
+										
+										<option value="CA" >Canada</option>
+										
+										<option value="CV" selected>Cape Verde</option>
+										
+										<option value="CF" >CAR</option>
+										
+										<option value="KY" >Cayman Islands</option>
+										
+										<option value="TD" >Chad</option>
+										
+										<option value="CL" >Chile</option>
+										
+										<option value="CN" >China</option>
+										
+										<option value="CX" >Christmas Islnd</option>
+										
+										<option value="CC" >Coconut Islands</option>
+										
+										<option value="CO" >Colombia</option>
+										
+										<option value="KM" >Comoros</option>
+										
+										<option value="CK" >Cook Islands</option>
+										
+										<option value="CR" >Costa Rica</option>
+										
+										<option value="CI" >Cote d'Ivoire</option>
+										
+										<option value="HR" >Croatia</option>
+										
+										<option value="CU" >Cuba</option>
+										
+										<option value="CY" >Cyprus</option>
+										
+										<option value="CZ" >Czech Republic</option>
+										
+										<option value="CD" >Dem. Rep. Congo</option>
+										
+										<option value="DK" >Denmark</option>
+										
+										<option value="DJ" >Djibouti</option>
+										
+										<option value="DM" >Dominica</option>
+										
+										<option value="DO" >Dominican Rep.</option>
+										
+										<option value="AN" >Dutch Antilles</option>
+										
+										<option value="TL" >East Timor</option>
+										
+										<option value="TP" >East Timor</option>
+										
+										<option value="EC" >Ecuador</option>
+										
+										<option value="EG" >Egypt</option>
+										
+										<option value="SV" >El Salvador</option>
+										
+										<option value="GQ" >Equatorial Guin</option>
+										
+										<option value="ER" >Eritrea</option>
+										
+										<option value="EE" >Estonia</option>
+										
+										<option value="ET" >Ethiopia</option>
+										
+										<option value="FK" >Falkland Islnds</option>
+										
+										<option value="FO" >Faroe Islands</option>
+										
+										<option value="FJ" >Fiji</option>
+										
+										<option value="FI" >Finland</option>
+										
+										<option value="FR" >France</option>
+										
+										<option value="PF" >Frenc.Polynesia</option>
+										
+										<option value="GF" >French Guayana</option>
+										
+										<option value="TF" >French S.Territ</option>
+										
+										<option value="GA" >Gabon</option>
+										
+										<option value="GM" >Gambia</option>
+										
+										<option value="GE" >Georgia</option>
+										
+										<option value="DE" >Germany</option>
+										
+										<option value="GH" >Ghana</option>
+										
+										<option value="GI" >Gibraltar</option>
+										
+										<option value="GR" >Greece</option>
+										
+										<option value="GL" >Greenland</option>
+										
+										<option value="GD" >Grenada</option>
+										
+										<option value="GP" >Guadeloupe</option>
+										
+										<option value="GU" >Guam</option>
+										
+										<option value="GT" >Guatemala</option>
+										
+										<option value="GN" >Guinea</option>
+										
+										<option value="GW" >Guinea-Bissau</option>
+										
+										<option value="GY" >Guyana</option>
+										
+										<option value="HT" >Haiti</option>
+										
+										<option value="HM" >Heard/McDon.Isl</option>
+										
+										<option value="HN" >Honduras</option>
+										
+										<option value="HK" >Hong Kong</option>
+										
+										<option value="HU" >Hungary</option>
+										
+										<option value="IS" >Iceland</option>
+										
+										<option value="IN" >India</option>
+										
+										<option value="ID" >Indonesia</option>
+										
+										<option value="IR" >Iran</option>
+										
+										<option value="IQ" >Iraq</option>
+										
+										<option value="IE" >Ireland</option>
+										
+										<option value="IL" >Israel</option>
+										
+										<option value="IT" >Italy</option>
+										
+										<option value="JM" >Jamaica</option>
+										
+										<option value="JP" >Japan</option>
+										
+										<option value="JO" >Jordan</option>
+										
+										<option value="KZ" >Kazakhstan</option>
+										
+										<option value="KE" >Kenya</option>
+										
+										<option value="KI" >Kiribati</option>
+										
+										<option value="XK" >Kosovo</option>
+										
+										<option value="KW" >Kuwait</option>
+										
+										<option value="KG" >Kyrgyzstan</option>
+										
+										<option value="LA" >Laos</option>
+										
+										<option value="LV" >Latvia</option>
+										
+										<option value="LB" >Lebanon</option>
+										
+										<option value="LS" >Lesotho</option>
+										
+										<option value="LR" >Liberia</option>
+										
+										<option value="LY" >Libya</option>
+										
+										<option value="LI" >Liechtenstein</option>
+										
+										<option value="LT" >Lithuania</option>
+										
+										<option value="LU" >Luxembourg</option>
+										
+										<option value="MO" >Macau</option>
+										
+										<option value="MK" >Macedonia</option>
+										
+										<option value="MG" >Madagascar</option>
+										
+										<option value="MW" >Malawi</option>
+										
+										<option value="MY" >Malaysia</option>
+										
+										<option value="MV" >Maldives</option>
+										
+										<option value="ML" >Mali</option>
+										
+										<option value="MT" >Malta</option>
+										
+										<option value="MH" >Marshall Islnds</option>
+										
+										<option value="MQ" >Martinique</option>
+										
+										<option value="MR" >Mauretania</option>
+										
+										<option value="MU" >Mauritius</option>
+										
+										<option value="YT" >Mayotte</option>
+										
+										<option value="MX" >Mexico</option>
+										
+										<option value="FM" >Micronesia</option>
+										
+										<option value="UM" >Minor Outl.Isl.</option>
+										
+										<option value="MD" >Moldova</option>
+										
+										<option value="MC" >Monaco</option>
+										
+										<option value="MN" >Mongolia</option>
+										
+										<option value="ME" >Montenegro</option>
+										
+										<option value="MS" >Montserrat</option>
+										
+										<option value="MA" >Morocco</option>
+										
+										<option value="MZ" >Mozambique</option>
+										
+										<option value="MP" >N.Mariana Islnd</option>
+										
+										<option value="NA" >Namibia</option>
+										
+										<option value="NR" >Nauru</option>
+										
+										<option value="NP" >Nepal</option>
+										
+										<option value="NL" >Netherlands</option>
+										
+										<option value="NC" >New Caledonia</option>
+										
+										<option value="NZ" >New Zealand</option>
+										
+										<option value="NI" >Nicaragua</option>
+										
+										<option value="NE" >Niger</option>
+										
+										<option value="NG" >Nigeria</option>
+										
+										<option value="NU" >Niue</option>
+										
+										<option value="NF" >Norfolk Islands</option>
+										
+										<option value="KP" >North Korea</option>
+										
+										<option value="NO" >Norway</option>
+										
+										<option value="OM" >Oman</option>
+										
+										<option value="PK" >Pakistan</option>
+										
+										<option value="PW" >Palau</option>
+										
+										<option value="PS" >Palestine</option>
+										
+										<option value="PA" >Panama</option>
+										
+										<option value="PG" >Pap. New Guinea</option>
+										
+										<option value="PY" >Paraguay</option>
+										
+										<option value="PE" >Peru</option>
+										
+										<option value="PH" >Philippines</option>
+										
+										<option value="PN" >Pitcairn Islnds</option>
+										
+										<option value="PL" >Poland</option>
+										
+										<option value="PT" >Portugal</option>
+										
+										<option value="PR" >Puerto Rico</option>
+										
+										<option value="QA" >Qatar</option>
+										
+										<option value="CG" >Rep.of Congo</option>
+										
+										<option value="RE" >Reunion</option>
+										
+										<option value="RO" >Romania</option>
+										
+										<option value="RU" >Russian Fed.</option>
+										
+										<option value="RW" >Rwanda</option>
+										
+										<option value="GS" >S. Sandwich Ins</option>
+										
+										<option value="ST" >S.Tome</option>
+										
+										<option value="SH" >Saint Helena</option>
+										
+										<option value="WS" >Samoa</option>
+										
+										<option value="AS" >Samoa</option>
+										
+										<option value="SM" >San Marino</option>
+										
+										<option value="SA" >Saudi Arabia</option>
+										
+										<option value="SN" >Senegal</option>
+										
+										<option value="RS" >Serbia</option>
+										
+										<option value="CS" >Serbia/Monten.</option>
+										
+										<option value="SC" >Seychelles</option>
+										
+										<option value="SL" >Sierra Leone</option>
+										
+										<option value="SG" >Singapore</option>
+										
+										<option value="SK" >Slovakia</option>
+										
+										<option value="SI" >Slovenia</option>
+										
+										<option value="SB" >Solomon Islands</option>
+										
+										<option value="SO" >Somalia</option>
+										
+										<option value="ZA" >South Africa</option>
+										
+										<option value="KR" >South Korea</option>
+										
+										<option value="ES" >Spain</option>
+										
+										<option value="LK" >Sri Lanka</option>
+										
+										<option value="KN" >St Kitts&Nevis</option>
+										
+										<option value="LC" >St. Lucia</option>
+										
+										<option value="VC" >St. Vincent</option>
+										
+										<option value="PM" >St.Pier</option>
+										
+										<option value="SD" >Sudan</option>
+										
+										<option value="SR" >Suriname</option>
+										
+										<option value="SJ" >Svalbard</option>
+										
+										<option value="SZ" >Swaziland</option>
+										
+										<option value="SE" >Sweden</option>
+										
+										<option value="CH" >Switzerland</option>
+										
+										<option value="SY" >Syria</option>
+										
+										<option value="TW" >Taiwan</option>
+										
+										<option value="TJ" >Tajikistan</option>
+										
+										<option value="TZ" >Tanzania</option>
+										
+										<option value="TH" >Thailand</option>
+										
+										<option value="TG" >Togo</option>
+										
+										<option value="TK" >Tokelau Islands</option>
+										
+										<option value="TO" >Tonga</option>
+										
+										<option value="TT" >Trinidad</option>
+										
+										<option value="TN" >Tunisia</option>
+										
+										<option value="TR" >Turkey</option>
+										
+										<option value="TM" >Turkmenistan</option>
+										
+										<option value="TC" >Turksh Caicosin</option>
+										
+										<option value="TV" >Tuvalu</option>
+										
+										<option value="UG" >Uganda</option>
+										
+										<option value="UA" >Ukraine</option>
+										
+										<option value="GB" >United Kingdom</option>
+										
+										<option value="UY" >Uruguay</option>
+										
+										<option value="US" >USA</option>
+										
+										<option value="AE" >Utd.Arab Emir.</option>
+										
+										<option value="UZ" >Uzbekistan</option>
+										
+										<option value="VU" >Vanuatu</option>
+										
+										<option value="VA" >Vatican City</option>
+										
+										<option value="VE" >Venezuela</option>
+										
+										<option value="VN" >Vietnam</option>
+										
+										<option value="WF" >Wallis</option>
+										
+										<option value="EH" >West Sahara</option>
+										
+										<option value="YE" >Yemen</option>
+										
+										<option value="ZM" >Zambia</option>
+										
+										<option value="ZW" >Zimbabwe</option>
+										
+									</select>
+									<p class="hint">String</p>
+									<p class="error">fejl 40</p>
+								</div>
+
+								<div class="field select">
+									<label>Preferred language</label>
+									<select id="language" name="language" >
+										
+										<option value="de" >German</option>
+										
+										<option value="zh" >China</option>
+										
+										<option value="en" >English</option>
+										
+										<option value="es" >Spanish</option>
+										
+									</select>
+									<p class="hint">String</p>
+									<p class="error">fejl 40</p>
+								</div>
+								
+								<div class="field string">
+									<label>Company</label>
+									<input type="text" name="company" value="Vestas Wind System A/S" />
+									<p class="hint">String</p>
+									<p class="error">fejl 40</p>
+								</div>
+
+								<h4>Role</h4>
+								<div class="field radio">
+									<input type="radio" name="role" id="role_user" value="0" checked   />
+									<label for="role_user">User</label>
+								
+									<input type="radio" name="role" id="role_administrator" value="1"  />
+									<label for="role_administrator">Administrator</label>
+								</div>
+
+							</fieldset>
+							
+							<fieldset>
+								<h3>Accounts the user has access to</h3>
+								<ul class="tree">
+									<li class="template">
+										<input type="checkbox" name="accounts[{account_id}]" id="id_{account_id}" value="1" checked="{selected}" class="is_disabled_{disabled}" />
+										<label for="id_{account_id}">{account_name} ({account_id})</label>
+										{children}
+									</li>
+								</ul>
+	                        </fieldset>
+			
+								
+			
+							<fieldset>
+								<h3>Available application for this user</h3>
+								
+								<div class="application">
+									<div class="applicationname">
+										<h4>Issue Manager</h4>
+									</div>
+									<div class="image">
+										<img src="/irj/go/km/docs/vestas_config/wcm/eservices/P003A_IM/app_logo_en.png" alt="Issue Manager"/>
+									</div>
+									<div class="state">
+										<div class="field radio">
+											<input type="radio" name="apps[P003A_IM][app_enabled]" value="true" id="P003A_IM_radio_on"  checked  />
+											<label for="P003A_IM_radio_on">On</label>
+										</div>
+										<div class="field radio">
+											<input type="radio" name="apps[P003A_IM][app_enabled]" value="false" id="P003A_IM_radio_off"   />
+											<label for="P003A_IM_radio_off">Off</label>
+										</div>
+									</div>
+									<div class="description"></div>
+									<div class="settings">
+										<input type="hidden" name="apps[P003A_IM][app_id]" value="P003A_IM" />
+										<input type="hidden" name="apps[P003A_IM][app_expiry_date]" value="1111" />
+										<input type="hidden" name="apps[P003A_IM][app_settings]" value="s1" />
+									</div>
+								</div>
+								
+								<div class="application">
+									<div class="applicationname">
+										<h4>Performance Manager</h4>
+									</div>
+									<div class="image">
+										<img src="/irj/go/km/docs/vestas_config/wcm/eservices/P004A_VPM/app_logo_en.png" alt="Performance Manager"/>
+									</div>
+									<div class="state">
+										<div class="field radio">
+											<input type="radio" name="apps[P004A_VPM][app_enabled]" value="true" id="P004A_VPM_radio_on"  checked  />
+											<label for="P004A_VPM_radio_on">On</label>
+										</div>
+										<div class="field radio">
+											<input type="radio" name="apps[P004A_VPM][app_enabled]" value="false" id="P004A_VPM_radio_off"   />
+											<label for="P004A_VPM_radio_off">Off</label>
+										</div>
+									</div>
+									<div class="description"></div>
+									<div class="settings">
+										<input type="hidden" name="apps[P004A_VPM][app_id]" value="P004A_VPM" />
+										<input type="hidden" name="apps[P004A_VPM][app_expiry_date]" value="1111" />
+										<input type="hidden" name="apps[P004A_VPM][app_settings]" value="s1" />
+									</div>
+								</div>
+								
+								<div class="application">
+									<div class="applicationname">
+										<h4>Power Forecasting</h4>
+									</div>
+									<div class="image">
+										<img src="/irj/go/km/docs/vestas_config/wcm/eservices/P005A_PF/app_logo_en.png" alt="Power Forecasting"/>
+									</div>
+									<div class="state">
+										<div class="field radio">
+											<input type="radio" name="apps[P005A_PF][app_enabled]" value="true" id="P005A_PF_radio_on"  checked  />
+											<label for="P005A_PF_radio_on">On</label>
+										</div>
+										<div class="field radio">
+											<input type="radio" name="apps[P005A_PF][app_enabled]" value="false" id="P005A_PF_radio_off"   />
+											<label for="P005A_PF_radio_off">Off</label>
+										</div>
+									</div>
+									<div class="description"></div>
+									<div class="settings">
+										<input type="hidden" name="apps[P005A_PF][app_id]" value="P005A_PF" />
+										<input type="hidden" name="apps[P005A_PF][app_expiry_date]" value="1111" />
+										<input type="hidden" name="apps[P005A_PF][app_settings]" value="s1" />
+									</div>
+								</div>
+								
+							</fieldset>
+							<ul class="actions">
+								<li class="submit"><input name="submit" type="submit" class="button primary" value="Save" /></li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
